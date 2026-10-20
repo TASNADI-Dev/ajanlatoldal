@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dr. Pipicz Sándor fogszakorvos · Cegléd</title>
+<style>
+@font-face {
+  font-family: 'Disp';
+  font-style: normal;
+  font-display: block;
+  font-weight: 200 800;
+  src: url(fonts/bricolage-grotesque-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Disp';
+  font-style: normal;
+  font-display: block;
+  font-weight: 200 800;
+  src: url(fonts/bricolage-grotesque-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Acc';
+  font-style: normal;
+  font-display: block;
+  font-weight: 100 900;
+  src: url(fonts/fraunces-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Acc';
+  font-style: normal;
+  font-display: block;
+  font-weight: 100 900;
+  src: url(fonts/fraunces-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Acc';
+  font-style: italic;
+  font-display: block;
+  font-weight: 100 900;
+  src: url(fonts/fraunces-latin-ext-standard-italic.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Acc';
+  font-style: italic;
+  font-display: block;
+  font-weight: 100 900;
+  src: url(fonts/fraunces-latin-standard-italic.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root{--bg:#f4f9fc;--surface:#e1eef7;--ink:#0e2a47;--muted:#56708a;--a1:#3f94c8;--a2:#14437a;--a3:#8cc9ea;--on-a1:#0e2a47;--on-a2:#0e2a47;--tb-bg:#0e2a47;--disp:'Disp',Impact,'Arial Narrow',sans-serif;--acc:'Acc',Georgia,serif;--body:'Disp',system-ui,sans-serif;--dw:700;--ds:100%;--ds2:100%;--dt:none;--gut:clamp(16px,3vw,40px);--gut-l:clamp(16px,5vw,80px);--tb-h:34px;color-scheme:light}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+::selection{background:var(--a1);color:var(--on-a1)}
+.disp{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds);text-transform:var(--dt);line-height:.94;letter-spacing:-.01em}
+.it{font-family:var(--acc);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-stretch:100%}
+.lbl{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.grain{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
+.pre{position:fixed;inset:0;z-index:100;display:grid;place-items:center}
+.pre .half{position:absolute;left:0;right:0;height:50.5%;background:var(--a1)}.pre .t{top:0}.pre .b{bottom:0}
+.pre .core{position:relative;z-index:2;text-align:center;color:var(--on-a1)}
+.pre .logo{width:min(84vw,620px);height:auto;margin:0 auto 18px}
+.pre .count{font-family:var(--acc);font-style:italic;font-size:clamp(48px,7vw,96px);line-height:1;color:var(--a2);font-variant-numeric:tabular-nums}
+.pre .lbl{color:inherit;opacity:.7;margin-top:10px}
+.topbar{position:fixed;inset:0 0 auto 0;z-index:51;height:34px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 var(--gut);background:var(--tb-bg);color:var(--a1);font-size:13px;letter-spacing:.02em;border-bottom:2px solid var(--a1);white-space:nowrap}
+.topbar a,.topbar span{display:inline-flex;align-items:center;gap:7px}.tb-l{display:flex;gap:26px}
+.topbar svg{width:14px;height:14px;fill:var(--a1)}.tb-k{font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+nav{position:fixed;inset:var(--tb-h) 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px var(--gut);transition:background .4s}
+nav.solid{background:linear-gradient(var(--bg) 0%,color-mix(in srgb,var(--bg) 82%,transparent) 100%);backdrop-filter:blur(10px)}
+.brand img{height:40px;width:auto}.brand .bm{display:none}.brand .txt{font-size:30px}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:99px;background:var(--a1);color:var(--on-a1);font-weight:800;font-size:15px;letter-spacing:.02em;overflow:hidden}
+.btn span{position:relative;z-index:1}
+.btn:before{content:"";position:absolute;inset:0;background:var(--a2);transform:translateY(101%);transition:transform .45s cubic-bezier(.7,0,.2,1);border-radius:inherit}
+.btn:hover:before{transform:none}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--ink) 35%,transparent)}.btn.ghost:before{background:var(--ink)}.btn.ghost:hover{color:var(--bg)}
+nav .btn{padding:11px 20px;font-size:14px}
+@media(max-width:860px){.topbar .tb-addr,.topbar .tb-k{display:none}.topbar{gap:8px;font-size:12px;padding:0 12px;letter-spacing:0}.brand .bl{display:none}.brand .bm{display:block;height:44px}}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}}
+
+
+.htype{position:relative;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:flex-end;padding:130px var(--gut) clamp(40px,8vh,90px)}
+.htype .ill{position:absolute;inset:0;pointer-events:none}
+.htype .ill svg{position:absolute;right:-8vw;top:50%;width:min(78vw,105vh);height:auto;transform:translateY(-50%);overflow:visible}
+.htype .cnt{position:relative;z-index:2;width:100%}
+.htype h1{font-size:clamp(54px,11vw,200px)}
+.htype h1 .ln{display:block;white-space:nowrap}
+.htype h1 .ln:nth-child(2){color:var(--a1)}
+.htype .lead{max-width:30em;color:var(--muted);font-size:clamp(17px,1.5vw,21px);margin-top:22px}
+.htype .kick{position:absolute;top:120px;left:var(--gut);z-index:2}
+@media(max-width:860px){.htype .ill svg{width:120vw;right:-40vw;top:34%;opacity:.55}.htype h1 .ln{white-space:normal}}
+
+.state{padding:clamp(110px,18vh,200px) var(--gut-l)}
+.state p{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);font-size:clamp(34px,5.6vw,92px);line-height:1;text-transform:var(--dt);max-width:15em}
+.state .w{opacity:.14;display:inline-block}
+.state .chip{display:inline-block;width:1.7em;height:.82em;border-radius:99px;overflow:hidden;vertical-align:-.04em;margin:0 .08em}
+.state .chip img{width:100%;height:100%;object-fit:cover}
+.state .it{color:var(--a1);text-transform:none}
+
+.hwrap{position:relative;overflow:hidden}
+.htrack{display:flex;width:max-content;height:100vh;height:100svh}
+.panel{width:100vw;height:100%;flex:none;position:relative;display:grid;align-items:center;padding:100px var(--gut-l) 60px;overflow:hidden}
+.panel .num{position:absolute;top:96px;right:var(--gut-l);font-family:var(--acc);font-style:italic;font-size:22px;color:var(--muted)}
+.panel.bg-bg{background:var(--bg)}.panel.bg-surface{background:var(--surface)}
+.panel.bg-a1{background:var(--a1);color:var(--on-a1)}.panel.bg-a2{background:var(--a2);color:var(--on-a2)}
+.panel.bg-glow{background:radial-gradient(ellipse at 70% 60%,color-mix(in srgb,var(--a2) 35%,var(--surface)) 0%,var(--surface) 60%)}
+.panel h2{font-size:clamp(90px,17vw,300px)}
+.panel h3{font-size:clamp(64px,9.5vw,165px)}
+.panel h2 .it,.panel h3 .it{display:block;font-size:.32em;color:var(--a1);margin-bottom:.15em}
+.panel.bg-a1 h3 .it,.panel.bg-a1 h2 .it{color:var(--a2)}
+.panel p{max-width:24em;margin-top:24px;font-size:18px;opacity:.82}
+.panel .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6vw;align-items:center}
+.panel>div,.panel .grid>div{min-width:0}.panel{grid-template-columns:minmax(0,1fr)}
+.panel h2,.panel h3{overflow-wrap:normal}
+.v-words{font-size:clamp(66px,11vw,200px)}
+.v-words div:nth-child(2){color:var(--a2)}.v-words div:nth-child(3){color:var(--a1)}
+.v-photo{border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-height:72vh;justify-self:center;width:min(100%,520px)}
+.v-photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.2)}
+.v-ring{width:min(44vw,70vh);aspect-ratio:1;justify-self:center}.v-ring svg{width:100%;height:100%;overflow:visible}
+.v-cols{display:flex;gap:clamp(12px,2vw,30px);align-items:flex-end;justify-content:center}
+.v-cols .col{width:clamp(64px,8vw,120px);text-align:center}
+.v-cols .g{position:relative;height:clamp(200px,40vh,380px);border:2px solid color-mix(in srgb,currentColor 35%,transparent);border-top:none;border-radius:4px 4px 22px 22px;overflow:hidden;clip-path:polygon(0 0,100% 0,88% 100%,12% 100%)}
+.v-cols .liq{position:absolute;left:0;right:0;bottom:0;height:0%;background:var(--c)}
+.v-cols .liq:before{content:"";position:absolute;left:0;right:0;top:-24px;height:26px;background:var(--f);border-radius:10px 10px 0 0}
+.v-cols b{display:block;margin-top:14px;font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);text-transform:var(--dt);font-size:clamp(15px,1.4vw,20px);line-height:1.05}
+.v-cols small{opacity:.7;font-family:var(--acc);font-style:italic;font-size:16px}
+.v-list{list-style:none;font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);text-transform:var(--dt);font-size:clamp(30px,3.6vw,58px);line-height:1.08}
+.v-list li{border-bottom:1px solid color-mix(in srgb,currentColor 22%,transparent);padding:.18em 0}
+@media(max-width:860px){.hwrap .htrack{flex-direction:column;width:100%;height:auto}.panel{width:100%;min-height:100svh;height:auto}.panel .grid{grid-template-columns:1fr}.v-ring{width:min(86vw,420px)}.v-cols .g{height:200px}}
+
+.steps{padding:clamp(100px,15vh,170px) var(--gut-l)}
+.steps h2{font-size:clamp(52px,8vw,140px);max-width:10em}.steps h2 .it{color:var(--a1)}
+.steps .line{position:relative;display:grid;grid-template-columns:repeat(var(--n),1fr);gap:24px;margin-top:70px}
+.steps .line:before{content:"";position:absolute;left:0;right:0;top:30px;height:3px;background:linear-gradient(90deg,var(--a1),var(--a2));transform-origin:0 50%;transform:scaleX(var(--p,0))}
+.steps .st .dot{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:3px solid var(--a1);font-family:var(--disp);font-weight:var(--dw);font-size:22px;position:relative;z-index:1}
+.steps .st h3{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);text-transform:var(--dt);font-size:clamp(26px,2.4vw,38px);line-height:1;margin-top:24px}
+.steps .st p{color:var(--muted);margin-top:10px;max-width:20em}
+@media(max-width:860px){.steps .line{grid-template-columns:1fr}.steps .line:before{display:none}}
+
+.chipsb{padding:clamp(110px,18vh,200px) var(--gut-l);position:relative;overflow:hidden}
+.chipsb h2{font-size:clamp(56px,10vw,175px);max-width:9.5em;margin-top:20px}
+.chipsb mark{color:var(--a1);padding:0 .06em;background:linear-gradient(var(--a1),var(--a1)) no-repeat 0 60%/0% 88%;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.chipsb .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;max-width:900px}
+.chipsb .chips span{padding:12px 20px;border-radius:99px;border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);font-size:16px}
+.chipsb .row{margin-top:40px}
+
+.foot{position:relative;padding:clamp(100px,16vh,180px) var(--gut-l) 40px;overflow:hidden}
+.foot .call{font-size:clamp(52px,8.6vw,155px)}.foot .call a{color:var(--a1)}
+.foot .call .it{display:block;font-size:.4em;margin-bottom:.2em}
+.foot .info{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:70px 0 0;padding-top:28px;border-top:1px solid color-mix(in srgb,var(--ink) 14%,transparent)}
+.foot .info b{display:block;font-size:20px;margin-top:6px;font-weight:600}
+.huge{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds);text-transform:var(--dt);line-height:.78;text-align:center;width:max-content;max-width:none;margin-inline:auto;color:transparent;-webkit-text-stroke:1.5px color-mix(in srgb,var(--ink) 20%,transparent);margin-top:60px;user-select:none;letter-spacing:-.02em;white-space:nowrap}
+.band{background:var(--a1);border-radius:22px;padding:clamp(18px,3vw,34px);margin-top:30px;display:grid;place-items:center}.band img{width:min(100%,620px);height:auto}
+.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:20px}
+@media(max-width:860px){.foot .info{grid-template-columns:1fr}}
+
+</style></head><body>
+
+<div class="pre" aria-hidden="true"><div class="half t"></div><div class="half b"></div><div class="core"><img class="logo" src="img/logo.png" alt=""><div class="count">0</div><div class="lbl">Cegléd · Népkör utca 9.</div></div></div>
+<div class="topbar"><div class="tb-l"><a href="tel:+3653611122"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>+36 53 611 122</a><span class="tb-addr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Cegléd, Népkör utca 9.</span></div><div class="tb-r"></div></div>
+<nav><a class="brand" href="#b0"><img class="bl" src="img/logo.png" alt="Dr. Pipicz Sándor fogszakorvos"><img class="bm" src="img/logo.png" alt="Dr. Pipicz Sándor fogszakorvos"></a><a class="btn" href="tel:+3653611122"><span>Időpont telefonon</span></a></nav>
+<section class="htype blk" id="b0" data-type="hero_type">
+  <div class="ill"><svg viewBox="-430 -430 860 860" aria-hidden="true"><circle class="s1" r="270" fill="none" stroke="var(--a1)" stroke-width="2" stroke-dasharray="6 14"/><circle class="s2" r="215" fill="var(--surface)"/><g class="s3" stroke="var(--a3)" stroke-width="3" opacity=".55"><line x1="-260" y1="-60" x2="-200" y2="-60"/><line x1="-260" y1="0" x2="-190" y2="0"/><line x1="-260" y1="60" x2="-200" y2="60"/></g><path d="M-110,-150 C-150,-190 -230,-170 -230,-80 C-230,0 -170,60 -160,150 C-150,230 -110,250 -90,200 C-70,150 -60,90 0,90 C60,90 70,150 90,200 C110,250 150,230 160,150 C170,60 230,0 230,-80 C230,-170 150,-190 110,-150 C70,-120 -70,-120 -110,-150 Z" fill="#fff" stroke="var(--a2)" stroke-width="10" stroke-linejoin="round"/><path class="s6" d="M-120,-90 Q0,-30 120,-90" fill="none" stroke="var(--a1)" stroke-width="12" stroke-linecap="round"/><circle class="s4" cx="150" cy="-190" r="22" fill="var(--a1)"/><g class="s5" fill="var(--a2)" opacity=".4"><circle cx="-240" cy="170" r="4"/><circle cx="-215" cy="170" r="4"/><circle cx="-190" cy="170" r="4"/></g></svg></div>
+  <span class="kick lbl">Konzerváló fogászat · Dr. Pipicz Sándor · Cegléd</span>
+  <div class="cnt"><h1 class="disp"><span class="ln">Fogászat</span><span class="ln">és <span class="it">fogpótlás.</span></span></h1><p class="lead">Nyugodt, barátságos légkör, fájdalom- és stresszmentes kezelés.</p><div class="row"><a class="btn mag" href="tel:+3653611122"><span>Időpont telefonon · +36 53 611 122</span></a><a class="btn ghost mag" href="#b2"><span>Beavatkozások</span></a></div></div>
+</section>
+<section class="state blk" id="b1" data-type="statement"><p>Fontos számomra a nyugodt, barátságos légkör, hogy a kezelések <span class="it">fájdalom- és stresszmentesek</span> legyenek. Fogorvosnak lenni nem csak munka, <span class="it">hanem hivatás.</span></p></section>
+<section class="hwrap blk" id="b2" data-type="hpanels"><div class="htrack"><div class="panel bg-bg" data-kind="words"><span class="num">01 / 03</span><div><span class="lbl">Beavatkozások</span><div class="v-words disp"><div>Tömések</div><div>Betétek</div><div>Gyökértömések</div></div><p>Hét kezelés egy rendelőben, egyetlen telefonhívásra.</p></div></div><div class="panel bg-a1" data-kind="ring"><span class="num">02 / 03</span><div class="grid"><div><span class="lbl"></span><h3 class="disp"><span class="it">cirkon-kerámia</span>Cirkon korona</h3><p>Biokompatibilis, színe évek alatt sem változik, a váza CAD/CAM technológiával készül.</p></div><div class="v-ring"><svg viewBox="-300 -300 600 600" aria-label="korona">
+  <defs><path id="b2p1r" d="M0,-250 a250,250 0 1,1 -0.1,0"/></defs>
+  <g class="spin"><text font-family="Disp" font-weight="800" font-size="22" letter-spacing="3" fill="var(--a1)" style="text-transform:uppercase"><textPath href="#b2p1r" textLength="1530" lengthAdjust="spacing">CIRKON · BIOKOMPATIBILIS · CAD/CAM · VÁLLAS ELŐKÉSZÍTÉS ·</textPath></text></g>
+  <circle r="205" fill="#ffffff"/><circle r="185" fill="#14437a"/>
+  <circle r="185" fill="none" stroke="var(--ink)" stroke-width="2" stroke-dasharray="4 10" opacity=".5"/>
+  <g class="dim"><line x1="-205" y1="0" x2="205" y2="0" stroke="var(--ink)" stroke-width="3"/><path d="M-205,-14 v28 M205,-14 v28" stroke="var(--ink)" stroke-width="3"/>
+  <rect x="-80" y="-36" width="160" height="72" rx="36" fill="var(--bg)"/><text text-anchor="middle" y="15" font-family="Acc" font-style="italic" font-size="42" fill="var(--a1)">korona</text></g>
+</svg></div></div></div><div class="panel bg-surface" data-kind="list"><span class="num">03 / 03</span><div class="grid"><div><span class="lbl"></span><h3 class="disp"><span class="it">a teljes lista</span>Mind a hét</h3><p>Kezelések a rendelőben, Cegléden.</p></div><ul class="v-list"><li>Tömések</li><li>Betét (inlay/onlay)</li><li>Gyökértömések</li><li>Fogkő-eltávolítás</li><li>Cirkon-kerámia fogpótlások</li><li>Porcelánnal leplezett fogpótlások</li><li>Kombinált fogpótlások</li></ul></div></div></div></section>
+<section class="steps blk" id="b3" data-type="steps"><span class="lbl">Időpont</span><h2 class="disp" style="margin-top:16px">Időpont <span class="it">telefonon.</span></h2><div class="line" style="--n:3"><div class="st"><div class="dot">1</div><h3>Hívja a rendelőt</h3><p>Hétfő, szerda 14:00–17:00 · kedd, csütörtök 9:00–12:00.</p></div><div class="st"><div class="dot">2</div><h3>Két orvos</h3><p>Dr. Pipicz Sándorhoz vagy kollégájához, Dr. Petrik Somához.</p></div><div class="st"><div class="dot">3</div><h3>Lemondás e-mailben</h3><p>pipicz.fogaszat@gmail.com, bármikor.</p></div></div></section>
+<section class="chipsb blk" id="b4" data-type="chips"><span class="lbl">Írások</span>
+  <h2 class="disp">Olvasnivaló <mark>a rendelő blogjáról.</mark></h2><div class="chips"><span>Fogpótlások típusai: koronák, hidak</span><span>6 tipp a kevesebb fogkőért</span><span>Mit tehetsz a rossz lehelet ellen?</span></div><div class="row"><a class="btn mag" href="tel:+3653611122"><span>Hívás: +36 53 611 122</span></a></div></section>
+<footer class="foot blk" id="b5" data-type="footer">
+<div class="call disp"><span class="it">Időpontot telefonon kérhet:</span><a href="tel:+3653611122">+36 53 611 122</a></div>
+<div class="info"><div><span class="lbl">Cím</span><b>Cegléd, Népkör utca 9.</b></div><div><span class="lbl">Dr. Pipicz Sándor</span><b>H, Sze 13:00–19:00<br>K, Cs 9:00–14:00</b></div><div><span class="lbl">Dr. Petrik Soma</span><b>K, Cs 16:00–20:00</b></div></div><div class="huge" aria-hidden="true">PIPICZ</div><div class="band"><img src="img/logo-white.png" alt="Dr. Pipicz Sándor fogszakorvos"></div>
+<div class="legal"><span>Dr. Pipicz Sándor fogszakorvos · Cegléd</span><span>Látványterv · a TASNADI javaslata</span></div></footer>
+<script src="js/gsap.min.js"></script><script src="js/ScrollTrigger.min.js"></script><script src="js/lenis.min.js"></script>
+<script>
+(function(){
+
+const REC=/rec/.test(location.search),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,SCRUB=REC?true:1;
+gsap.registerPlugin(ScrollTrigger);const mm=gsap.matchMedia();let lenis=null;
+if(!REC&&!reduce&&window.Lenis){lenis=new Lenis({lerp:.09});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0)}
+function particles(c,kind){if(!c||reduce)return;const x=c.getContext('2d');let w,h,ps=[];const col=getComputedStyle(document.documentElement).getPropertyValue('--a1').trim()||'#ffb050';
+ const tmp=document.createElement('canvas').getContext('2d');tmp.fillStyle=col;const hex=tmp.fillStyle;const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+ function rs(){const q=c.getBoundingClientRect();w=c.width=q.width*devicePixelRatio;h=c.height=q.height*devicePixelRatio}rs();addEventListener('resize',rs);
+ const up=kind!=='snow',n=innerWidth<700?40:85;
+ function sp(i){return{x:Math.random()*w,y:i?Math.random()*h:(up?h+20:-20),v:(.4+Math.random()*1.3)*devicePixelRatio,s:(.6+Math.random()*2.2)*devicePixelRatio,o:Math.random()*7,l:.5+Math.random()*.5}}
+ for(let i=0;i<n;i++)ps.push(sp(true));let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(c);
+ (function f(){requestAnimationFrame(f);if(!vis)return;x.clearRect(0,0,w,h);x.globalCompositeOperation='lighter';
+  for(const p of ps){p.y+=up?-p.v:p.v;p.o+=.03;p.x+=Math.sin(p.o)*.6*devicePixelRatio;if(p.y<-20||p.y>h+20)Object.assign(p,sp(false));
+   const a=p.l*(.55+.45*Math.sin(p.o*3)),gr=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.s*4);gr.addColorStop(0,`rgba(${r},${g},${b},${a})`);gr.addColorStop(1,`rgba(${r},${g},${b},0)`);
+   x.fillStyle=gr;x.beginPath();x.arc(p.x,p.y,p.s*4,0,7);x.fill()}})()}
+
+{const R=document.getElementById('b0');try{{const root=R,q=s=>root.querySelectorAll(s);const tl=gsap.timeline({scrollTrigger:{trigger:root,start:'top top',end:'+=140%',scrub:SCRUB,pin:true}});
+tl.to(q('.ill svg'),{rotate:40,scale:1.25,ease:'none'},0).to(q('.s1'),{rotate:-120,svgOrigin:'0 0',ease:'none'},0).to(q('.s4'),{x:-260,y:300,ease:'none'},0)
+ .to(q('.s3'),{x:120,ease:'none'},0).to(q('.s6'),{attr:{d:'M-260,40 Q0,220 260,40'},ease:'none'},0)
+ .to(q('h1 .ln'),{x:(i)=>i%2?'-6vw':'6vw',ease:'none'},0).to(q('.lead,.row,.kick'),{opacity:0,y:-30,duration:.35},.1);
+if(!REC&&!reduce){gsap.from(q('h1 .ln'),{yPercent:110,opacity:0,stagger:.12,duration:1.1,ease:'expo.out',delay:.3});gsap.from(q('.ill svg'),{scale:.6,opacity:0,duration:1.6,ease:'expo.out'})}}}catch(err){console.error('blokk b0 (hero_type):',err)}}
+{const R=document.getElementById('b1');try{{const p=R.querySelector('p');[...p.childNodes].forEach(n=>{if(n.nodeType===3){const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(t=>{if(!t||/^\s+$/.test(t))f.appendChild(document.createTextNode(t));else{const s=document.createElement('span');s.className='w';s.textContent=t;f.appendChild(s)}});n.replaceWith(f)}else if(n.classList)n.classList.add('w')});
+gsap.to(p.querySelectorAll('.w'),{opacity:1,stagger:.08,ease:'none',scrollTrigger:{trigger:R,start:'top 75%',end:'bottom 70%',scrub:true}});
+gsap.from(p.querySelectorAll('.chip'),{scale:0,rotate:-20,stagger:.2,scrollTrigger:{trigger:R,start:'top 70%',end:'center center',scrub:true}});}}catch(err){console.error('blokk b1 (statement):',err)}}
+{const R=document.getElementById('b2');try{{const root=R,ht=root.querySelector('.htrack');
+/* hosszú cím: csak akkor kicsinyít, ha a cím a panelből kilógna vagy levágódna (a rövid címek mérete változatlan) */
+function fit(){root.querySelectorAll('.panel h2,.panel h3').forEach(h=>{h.style.fontSize='';let fs=parseFloat(getComputedStyle(h).fontSize),p=h.closest('.panel'),n=0;
+ while(n++<40&&fs>26&&(h.scrollWidth>h.clientWidth+1||(innerWidth>860&&p.scrollHeight>p.clientHeight+1))){fs*=.93;h.style.fontSize=fs+'px'}})}
+fit();document.fonts&&document.fonts.ready.then(()=>{fit();ScrollTrigger.refresh()});ScrollTrigger.addEventListener('refreshInit',fit);
+function anim(p,ca){const o=ca?{containerAnimation:ca,start:'left 80%',end:'left 5%'}:{start:'top 80%',end:'center center'};const st=x=>Object.assign({trigger:p,scrub:true},o,x||{});const k=p.dataset.kind;
+ if(k==='words')gsap.fromTo(p.querySelectorAll('.v-words div'),{fontStretch:'125%',opacity:.2},{fontStretch:'62%',opacity:1,stagger:.15,scrollTrigger:st()});
+ if(k==='photo')gsap.fromTo(p.querySelector('.v-photo'),{clipPath:'inset(100% 0 0 0 round 24px)'},{clipPath:'inset(0% 0 0 0 round 24px)',scrollTrigger:st()}),gsap.to(p.querySelector('.v-photo img'),{scale:1,scrollTrigger:st()});
+ if(k==='ring'){gsap.fromTo(p.querySelector('.dim'),{scaleX:0,transformOrigin:'50% 50%'},{scaleX:1,scrollTrigger:st()});gsap.from(p.querySelector('.v-ring svg'),{rotate:-120,scale:.6,scrollTrigger:st(ca?{start:'left right',end:'left 10%'}:{})});gsap.to(p.querySelector('.spin'),{rotate:360,svgOrigin:'0 0',duration:40,repeat:-1,ease:'none'})}
+ if(k==='columns')p.querySelectorAll('.liq').forEach((l,i)=>gsap.to(l,{height:l.dataset.fill+'%',ease:'power1.out',scrollTrigger:st({start:(ca?'left ':'top ')+(80-i*4)+'%'})}));
+ if(k==='list')gsap.from(p.querySelectorAll('.v-list li'),{x:80,opacity:0,stagger:.1,scrollTrigger:st()});}
+mm.add('(min-width: 861px)',()=>{const tw=gsap.to(ht,{x:()=>-(ht.scrollWidth-innerWidth),ease:'none',scrollTrigger:{trigger:root,start:'top top',end:()=>'+='+(ht.scrollWidth-innerWidth)*1.15,pin:true,scrub:SCRUB,invalidateOnRefresh:true,anticipatePin:1}});
+ gsap.from(root.querySelector('.panel h2,.panel h3'),{xPercent:20,opacity:.2,scrollTrigger:{trigger:root,start:'top bottom',end:'top top',scrub:true}});
+ root.querySelectorAll('.panel').forEach(p=>anim(p,tw))});
+mm.add('(max-width: 860px)',()=>{root.querySelectorAll('.panel').forEach(p=>anim(p,null))});}}catch(err){console.error('blokk b2 (hpanels):',err)}}
+{const R=document.getElementById('b3');try{{const ln=R.querySelector('.line');gsap.to(ln,{'--p':1,ease:'none',scrollTrigger:{trigger:ln,start:'top 80%',end:'top 35%',scrub:true}});
+gsap.from(R.querySelectorAll('.st'),{y:60,opacity:0,stagger:.15,scrollTrigger:{trigger:ln,start:'top 85%',end:'top 40%',scrub:true}});}}catch(err){console.error('blokk b3 (steps):',err)}}
+{const R=document.getElementById('b4');try{{const hl=R.querySelector('mark');gsap.timeline({scrollTrigger:{trigger:hl,start:'top 85%',end:'top 45%',scrub:true}}).to(hl,{backgroundSize:'100% 88%',ease:'none',duration:1}).to(hl,{color:'var(--on-a1)',duration:.25},.55);
+gsap.from(R.querySelectorAll('.chips span'),{y:60,opacity:0,rotate:i=>((i*37)%24)-12,stagger:.06,scrollTrigger:{trigger:R.querySelector('.chips'),start:'top 90%',end:'top 55%',scrub:true}});}}catch(err){console.error('blokk b4 (chips):',err)}}
+{const R=document.getElementById('b5');try{{gsap.from(R.querySelector('.call'),{yPercent:30,opacity:0,scrollTrigger:{trigger:R,start:'top 85%',end:'top 40%',scrub:true}});
+const hg=R.querySelector('.huge');if(hg){const fit=()=>{hg.style.fontSize='100px';const P=hg.parentElement,cs=getComputedStyle(P),W=P.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);hg.style.fontSize=(100*W/hg.scrollWidth*.98)+'px'};fit();document.fonts&&document.fonts.ready.then(()=>{fit();ScrollTrigger.refresh()});addEventListener('resize',fit);
+ gsap.fromTo(hg,{scaleX:1.25,opacity:.2,transformOrigin:'50% 100%'},{scaleX:1,opacity:1,scrollTrigger:{trigger:hg,start:'top bottom',end:'top 55%',scrub:true}})}
+}}catch(err){console.error('blokk b5 (footer):',err)}}
+
+const pre=document.querySelector('.pre');if(pre){if(REC||reduce)pre.remove();else{const cnt=pre.querySelector('.count'),o={v:0};
+ gsap.to(o,{v:100,duration:1.5,ease:'power2.inOut',onUpdate:()=>cnt.textContent=Math.round(o.v),onComplete:()=>{gsap.to(pre.querySelector('.core'),{opacity:0,y:-20,duration:.4});
+  gsap.to(pre.querySelector('.t'),{yPercent:-100,duration:1.1,ease:'expo.inOut',delay:.25});gsap.to(pre.querySelector('.b'),{yPercent:100,duration:1.1,ease:'expo.inOut',delay:.25,onComplete:()=>pre.remove()})}})}}
+const nav=document.querySelector('nav'),first=document.querySelector('.blk');
+ScrollTrigger.create({start:()=>Math.max(80,(first?first.offsetHeight:600)*.9),end:'max',onToggle:s=>nav.classList.toggle('solid',s.isActive)});
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',ev=>{const t=document.querySelector(a.getAttribute('href'));if(!t)return;ev.preventDefault();lenis?lenis.scrollTo(t):t.scrollIntoView({behavior:'smooth'})}));
+document.fonts&&document.fonts.ready.then(()=>ScrollTrigger.refresh());addEventListener('resize',()=>ScrollTrigger.refresh());
+window.__ready=true;
+
+})();
+</script></body></html>
