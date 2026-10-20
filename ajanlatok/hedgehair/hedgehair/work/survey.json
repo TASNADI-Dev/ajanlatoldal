@@ -1,0 +1,85 @@
+{
+ "domain": "hedgehair.com",
+ "final_url": "https://hedgehair.com/",
+ "pages": [
+  {
+   "url": "https://hedgehair.com/",
+   "title": "Kezdőlap - HEDGEHAIR Professzionális Fodrászat Debrecen",
+   "words": 204,
+   "text": "Kezdőlap - HEDGEHAIR Professzionális Fodrászat Debrecen Kezdőlap Galéria Divat Esküvői Oktatás Szalonjaink Árlista Blog Kapcsolat Szalonjaink Budapesten, Debrecenben és Nyiregyházán is jelen vagyunk. Fantasztikus kollégáinkal professzionális környezetben szeretettel várjuk a szépülni vágyókat. Mutasd Galéria Itt megnézheted ismert emberek divatos fizuráit amelyeket mi készítettünk és esküvői hajkoronákat amelyeket a kedves hölgyek megálmodtak a nagy napra. Tovább Oktatás Az Akadémia célja, hogy naprakész, gyakorlatias nemzetközi tudást adjon át mindazoknak, akik fejlődni, váltani vagy szintet lépni szeretnének. Képzéseinket szakértő oktatók vezetik, valós piaci tapasztalattal, hogy ne csak tanulj, hanem azonnal alkalmazni is tudd a megszerzett tudást. Nálunk a fókusz a minőségen, a támogatáson és a valódi eredményeken van. Tovább Blog Divat – Hírek – Újdonságok – Események Dancing with the stars A Hedge Hair csapata idén is meghatározó szerepet vállal a DWTS 3. évadában. Csekkoljátok a... bővebben Magyar nagydíj after party Sziasztok! Múlt hétvégén került megrendezésre a FORMULA 1 MAGYAR NAGYDÍJ ! A hivatalos after... bővebben Magyarország sikeres személyiségei Kompos Tamást a Hedge Hair alapítóját mutatja be a BRITISH PUBLISHING HOUSE LTD. Magyarország... bővebben Összes bejegyzés Videó Galéria Videó – Divat – Események Összes bejegyzés Kapcsolat Telefon +36-30/154-7070 Email hedgehairdebrecen@gmail.com Cím Bólyai u. 2. ÁSZF Adatvédelmi tájékoztató Követés Követés © Minden jogot Fenntartva HEDGEHAIR Design by PlusDesign"
+  }
+ ],
+ "images": [
+  {
+   "n": 0,
+   "file": "work/raw/00.jpg",
+   "src": "https://hedgehair.com/wp-content/uploads/2022/11/222.jpg",
+   "w": 1125,
+   "h": 1090,
+   "alt": "Dancing with the stars",
+   "logo?": false,
+   "forras": "html",
+   "eredeti": true
+  },
+  {
+   "n": 1,
+   "file": "work/raw/01.jpg",
+   "src": "https://hedgehair.com/wp-content/uploads/2022/08/forma1-2.jpg",
+   "w": 1536,
+   "h": 864,
+   "alt": "Magyar nagydíj after party",
+   "logo?": false,
+   "forras": "html",
+   "eredeti": true
+  },
+  {
+   "n": 2,
+   "file": "work/raw/02.jpg",
+   "src": "https://hedgehair.com/wp-content/uploads/2022/08/mss.jpg",
+   "w": 1800,
+   "h": 1684,
+   "alt": "Magyarország sikeres személyiségei",
+   "logo?": false,
+   "forras": "html",
+   "eredeti": true
+  }
+ ],
+ "interactive": [
+  {
+   "text": "webshop/kosár",
+   "source": "https://hedgehair.com/"
+  },
+  {
+   "text": "videó",
+   "source": "https://hedgehair.com/"
+  },
+  {
+   "text": "animáció/slider",
+   "source": "https://hedgehair.com/"
+  }
+ ],
+ "observations": [
+  "a telefonszám (+36-30/154-7070) nem kattintható (nincs tel: link)"
+ ],
+ "colors": [
+  "#fdb467",
+  "#2ea3f2",
+  "#003388",
+  "#82c0c7",
+  "#007aff",
+  "#339966",
+  "#abb8c3",
+  "#f78da7"
+ ],
+ "tel_links": [],
+ "emails": [
+  "hedgehairdebrecen@gmail.com"
+ ],
+ "browser_notes": [],
+ "prefilter": {
+  "stop": [],
+  "words": 204,
+  "photos_1000px": 3,
+  "route": "fotós"
+ }
+}

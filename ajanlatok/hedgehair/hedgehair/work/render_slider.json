@@ -1,0 +1,11 @@
+{
+ "slider": {
+  "kep": "media/new-desktop.jpg",
+  "megfelel": true,
+  "kemeny_hibak": [],
+  "figyelmeztetesek": [
+   "a fő gomb a bal félen van"
+  ],
+  "ures": 0.21
+ }
+}

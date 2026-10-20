@@ -1,0 +1,144 @@
+{
+ "desktop": {
+  "hibak": [],
+  "kilogas_px": 0,
+  "scroll_magassag": 13438,
+  "levagott": [],
+  "fonts": {
+   "Disp": true,
+   "Acc": true
+  },
+  "unfilled": [],
+  "upscaled": [
+   "img/tablet.jpg (900px -> 1280px)",
+   "img/szekreny.jpg (900px -> 1280px)",
+   "img/muszer.jpg (900px -> 1280px)",
+   "img/meroora.jpg (900px -> 1280px)"
+  ],
+  "broken": [],
+  "blocks": [
+   {
+    "id": "b0",
+    "type": "hero_mask",
+    "top": 0,
+    "pin": [
+     -0.0,
+     1760
+    ],
+    "words": 25
+   },
+   {
+    "id": "b1",
+    "type": "statement",
+    "top": 2560,
+    "pin": null,
+    "words": 15
+   },
+   {
+    "id": "b2",
+    "type": "hpanels",
+    "top": 3280,
+    "pin": [
+     3280,
+     7696
+    ],
+    "words": 76
+   },
+   {
+    "id": "b3",
+    "type": "stack",
+    "top": 8496,
+    "pin": null,
+    "words": 28
+   },
+   {
+    "id": "b4",
+    "type": "steps",
+    "top": 11386,
+    "pin": null,
+    "words": 26
+   },
+   {
+    "id": "b5",
+    "type": "chips",
+    "top": 12014,
+    "pin": null,
+    "words": 25
+   },
+   {
+    "id": "b6",
+    "type": "footer",
+    "top": 13195,
+    "pin": null,
+    "words": 35
+   }
+  ]
+ },
+ "mobile": {
+  "hibak": [],
+  "kilogas_px": 0,
+  "scroll_magassag": 11835,
+  "levagott": [],
+  "fonts": {
+   "Disp": true,
+   "Acc": true
+  },
+  "unfilled": [],
+  "upscaled": [],
+  "broken": [],
+  "blocks": [
+   {
+    "id": "b0",
+    "type": "hero_mask",
+    "top": 0,
+    "pin": [
+     -0.0,
+     1857
+    ],
+    "words": 21
+   },
+   {
+    "id": "b1",
+    "type": "statement",
+    "top": 2701,
+    "pin": null,
+    "words": 15
+   },
+   {
+    "id": "b2",
+    "type": "hpanels",
+    "top": 3345,
+    "pin": null,
+    "words": 76
+   },
+   {
+    "id": "b3",
+    "type": "stack",
+    "top": 6721,
+    "pin": null,
+    "words": 28
+   },
+   {
+    "id": "b4",
+    "type": "steps",
+    "top": 9572,
+    "pin": null,
+    "words": 26
+   },
+   {
+    "id": "b5",
+    "type": "chips",
+    "top": 10559,
+    "pin": null,
+    "words": 25
+   },
+   {
+    "id": "b6",
+    "type": "footer",
+    "top": 11652,
+    "pin": null,
+    "words": 35
+   }
+  ]
+ }
+}

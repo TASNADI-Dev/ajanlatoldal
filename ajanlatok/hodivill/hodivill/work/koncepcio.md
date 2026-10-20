@@ -1,0 +1,7 @@
+- wow: hero_mask a HÓDIVILL betűin át a szekrénynél dolgozó szerelő fotójába (tablet.jpg); sötétkék alap, logó kék-piros.
+- blokkok: statement (bemutatkozás), hpanels (4 szolgáltatás: regisztrált, mérőhely, villanyszerelő, H tarifa okt 15-ápr 15), stack (mérőhely, tervezés, H tarifa fotók), steps (mérőhely: igénybejelentés, vizsgálat, MGT), chips (kinek), footer.
+- paletta: #031c4a bg, #1da1f3 a1, #e8232b a2, #f2c230 a3 (szerszámfotók); font: Archivo wdth + Instrument Serif.
+- fő cselekvés: Hívás most, tel:+36307472060.
+- csúszkakép: a hero végállapota (kiegészül a jeloltek értékelése után).
+- kihagyva: árak, referenciák, értékelések, évek (nincs forrás).
+- csúszkakép: y=1920, b0 nyitókép: kész, cím+logó+gomb+fotó; a most: a mostani nyitókép

@@ -1,0 +1,141 @@
+{
+ "desktop": {
+  "hibak": [],
+  "kilogas_px": 0,
+  "scroll_magassag": 8860,
+  "levagott": [],
+  "fonts": {
+   "Disp": true,
+   "Acc": true,
+   "Body": true
+  },
+  "unfilled": [],
+  "upscaled": [],
+  "broken": [],
+  "blocks": [
+   {
+    "id": "b0",
+    "type": "hero_mask",
+    "top": 0,
+    "pin": [
+     -0.0,
+     1760
+    ],
+    "words": 22
+   },
+   {
+    "id": "b1",
+    "type": "statement",
+    "top": 2560,
+    "pin": null,
+    "words": 14
+   },
+   {
+    "id": "b2",
+    "type": "chips",
+    "top": 3495,
+    "pin": null,
+    "words": 19
+   },
+   {
+    "id": "b3",
+    "type": "gallery",
+    "top": 4556,
+    "pin": null,
+    "words": 10
+   },
+   {
+    "id": "b4",
+    "type": "hpanels",
+    "top": 5577,
+    "pin": [
+     5577,
+     7049
+    ],
+    "words": 34
+   },
+   {
+    "id": "b5",
+    "type": "features",
+    "top": 7849,
+    "pin": null,
+    "words": 22
+   },
+   {
+    "id": "b6",
+    "type": "footer",
+    "top": 8518,
+    "pin": null,
+    "words": 30
+   }
+  ]
+ },
+ "mobile": {
+  "hibak": [],
+  "kilogas_px": 0,
+  "scroll_magassag": 8266,
+  "levagott": [],
+  "fonts": {
+   "Disp": true,
+   "Acc": true,
+   "Body": true
+  },
+  "unfilled": [],
+  "upscaled": [],
+  "broken": [],
+  "blocks": [
+   {
+    "id": "b0",
+    "type": "hero_mask",
+    "top": 0,
+    "pin": [
+     -0.0,
+     1857
+    ],
+    "words": 20
+   },
+   {
+    "id": "b1",
+    "type": "statement",
+    "top": 2701,
+    "pin": null,
+    "words": 14
+   },
+   {
+    "id": "b2",
+    "type": "chips",
+    "top": 3413,
+    "pin": null,
+    "words": 19
+   },
+   {
+    "id": "b3",
+    "type": "gallery",
+    "top": 4340,
+    "pin": null,
+    "words": 10
+   },
+   {
+    "id": "b4",
+    "type": "hpanels",
+    "top": 5175,
+    "pin": null,
+    "words": 34
+   },
+   {
+    "id": "b5",
+    "type": "features",
+    "top": 6863,
+    "pin": null,
+    "words": 22
+   },
+   {
+    "id": "b6",
+    "type": "footer",
+    "top": 8042,
+    "pin": null,
+    "words": 30
+   }
+  ]
+ }
+}

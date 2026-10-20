@@ -1,0 +1,45 @@
+{
+ "y": 1920,
+ "ures": 0.21,
+ "kemeny_hibak": [],
+ "figyelmeztetesek": [
+  "a fő gomb a bal félen van"
+ ],
+ "allapot": {
+  "W": 1280,
+  "H": 800,
+  "mid": 0,
+  "midId": null,
+  "block": {
+   "id": "b0",
+   "type": "hero_mask"
+  },
+  "title": {
+   "ok": true,
+   "text": "Szalon, divat és esküvői hajkoronák.",
+   "right": 0.5,
+   "box": [
+    38,
+    224,
+    1242,
+    503
+   ]
+  },
+  "logo": {
+   "ok": true,
+   "w": 130,
+   "nat": 486
+  },
+  "btn": {
+   "ok": true,
+   "navOnly": false,
+   "right": 0
+  },
+  "photo": {
+   "a": 0.8,
+   "right": 0.5,
+   "kind": "fotó"
+  },
+  "pageHasPhotos": true
+ }
+}

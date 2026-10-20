@@ -1,0 +1,196 @@
+{
+ "company": "HEDGEHAIR Professzionális Fodrászat",
+ "title": "HEDGEHAIR · Professzionális Fodrászat",
+ "theme": {
+  "mode": "dark",
+  "bg": "#0e0c0f",
+  "surface": "#1a161b",
+  "ink": "#f6efe8",
+  "muted": "#a89fa0",
+  "a1": "#fdb467",
+  "a2": "#f78da7",
+  "a3": "#82c0c7",
+  "grain": true
+ },
+ "type": {
+  "weight": 800,
+  "stretch": "100%",
+  "stretch2": "100%",
+  "upper": false
+ },
+ "logo": {
+  "nav": "img/logo-light.png",
+  "mark": "img/logo-light.png",
+  "pre": "img/logo.png"
+ },
+ "cta": {
+  "label": "Időpontfoglalás",
+  "href": "https://bwnet.hu/salon/1343/HEDGE%20HAIR/"
+ },
+ "preloader": {
+  "label": "Budapest · Debrecen · Nyíregyháza"
+ },
+ "blocks": [
+  {
+   "type": "hero_mask",
+   "word": "HEDGE",
+   "photo": "img/salon.jpg",
+   "alt": "A Hedge Hair szalon belső tere",
+   "particles": "none",
+   "intro": {
+    "tl": "Professzionális fodrászat",
+    "tr": "Divat · Esküvői · Akadémia",
+    "bl": "Budapest · Debrecen · Nyíregyháza",
+    "br": "Hedge Hair"
+   },
+   "title_small": "Szalon, divat és",
+   "title": "esküvői *hajkoronák.*",
+   "buttons": [
+    {
+     "label": "Időpontfoglalás",
+     "href": "https://bwnet.hu/salon/1343/HEDGE%20HAIR/"
+    },
+    {
+     "label": "Galéria",
+     "href": "#b3",
+     "ghost": true
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "text": "Budapesten, Debrecenben és Nyíregyházán is *szeretettel várjuk* [img:img/salon.jpg] a szépülni vágyókat. Fantasztikus kollégákkal, [img:img/w1.jpg] professzionális környezetben."
+  },
+  {
+   "type": "chips",
+   "label": "Galéria · Oktatás",
+   "title": "Divat, esküvő,",
+   "highlight": "egy szalonban.",
+   "chips": [
+    "Divatos fizurák",
+    "Esküvői hajkoronák",
+    "Alkalmi frizura",
+    "Menyasszonyi frizura",
+    "Hullámosítás",
+    "Hedge Academy"
+   ],
+   "buttons": [
+    {
+     "label": "Időpontfoglalás",
+     "href": "https://bwnet.hu/salon/1343/HEDGE%20HAIR/"
+    }
+   ]
+  },
+  {
+   "type": "gallery",
+   "label": "Galéria",
+   "title": "Friss *hajfotók*",
+   "images": [
+    {
+     "src": "img/salon.jpg",
+     "caption": "Szalon"
+    },
+    {
+     "src": "img/w2.jpg",
+     "caption": "Esküvői"
+    },
+    {
+     "src": "img/f2.jpg",
+     "caption": "Divat"
+    },
+    {
+     "src": "img/w3.jpg",
+     "caption": "Esküvői"
+    },
+    {
+     "src": "img/f4.jpg",
+     "caption": "Divat"
+    },
+    {
+     "src": "img/w4.jpg",
+     "caption": "Esküvői"
+    },
+    {
+     "src": "img/w5.jpg",
+     "caption": "Esküvői"
+    }
+   ]
+  },
+  {
+   "type": "hpanels",
+   "panels": [
+    {
+     "bg": "surface",
+     "title_small": "árlista kategóriák",
+     "title": "Mit csinálunk",
+     "text": "Nőknek, férfiaknak, hajfestés, alkalmi és ápolás.",
+     "visual": {
+      "kind": "list",
+      "items": [
+       "Hajvágás",
+       "Hajfestés",
+       "Alkalmi frizura",
+       "Menyasszonyi frizura",
+       "Ápolás",
+       "Styling"
+      ]
+     }
+    },
+    {
+     "bg": "a1",
+     "title_small": "Hedge Academy",
+     "title": "Oktatás",
+     "text": "Naprakész, gyakorlatias nemzetközi tudás fodrászoknak és borbélyoknak."
+    }
+   ]
+  },
+  {
+   "type": "features",
+   "label": "Szalonjaink",
+   "title": "Három *város*",
+   "items": [
+    {
+     "title": "Budapest",
+     "text": "Nádor utca 8."
+    },
+    {
+     "title": "Debrecen",
+     "text": "Piac utca 38. · Bólyai 2."
+    },
+    {
+     "title": "Nyíregyháza",
+     "text": "Dózsa György utca 5."
+    }
+   ]
+  },
+  {
+   "type": "footer",
+   "call_small": "Foglalj időpontot online:",
+   "call": "Időpontfoglalás",
+   "href": "https://bwnet.hu/salon/1343/HEDGE%20HAIR/",
+   "particles": "none",
+   "info": [
+    {
+     "label": "Budapest",
+     "value": "Nádor utca 8."
+    },
+    {
+     "label": "Debrecen",
+     "value": "Piac utca 38.\nBólyai 2."
+    },
+    {
+     "label": "Nyíregyháza",
+     "value": "Dózsa György utca 5."
+    },
+    {
+     "label": "E-mail",
+     "value": "info@hedgehair.com"
+    }
+   ],
+   "huge": "HEDGE",
+   "band_logo": "img/logo-dark.png",
+   "company": "HEDGEHAIR",
+   "legal_left": "HEDGEHAIR Professzionális Fodrászat"
+  }
+ ]
+}

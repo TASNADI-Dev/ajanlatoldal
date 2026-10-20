@@ -1,0 +1,115 @@
+{
+ "photos": [
+  {
+   "file": "mockup/img/kijelzo.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.69,
+   "oldal_felirata": "H tarifa óra kijelző",
+   "survey_sorszam": 28
+  },
+  {
+   "file": "mockup/img/merok.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "kozepes",
+   "atlag_fenyero": 0.7,
+   "oldal_felirata": "Mérőhely szabványosítás",
+   "survey_sorszam": 21
+  },
+  {
+   "file": "mockup/img/meroora.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.71,
+   "oldal_felirata": "Hogyan működik H tarifa",
+   "survey_sorszam": 27
+  },
+  {
+   "file": "mockup/img/muszer.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.52,
+   "oldal_felirata": "Felmérés és tanácsadás",
+   "survey_sorszam": 30
+  },
+  {
+   "file": "mockup/img/norbert.jpg",
+   "w": 500,
+   "h": 500,
+   "bg": "kozepes",
+   "atlag_fenyero": 0.53,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/panel.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.66,
+   "oldal_felirata": "Mérőhely szabványosítás regisztrált villanyszerelő",
+   "survey_sorszam": 19
+  },
+  {
+   "file": "mockup/img/szamolo.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.74,
+   "oldal_felirata": "Mi az a H tarifa, és hogyan működik?",
+   "survey_sorszam": 26
+  },
+  {
+   "file": "mockup/img/szekreny.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.68,
+   "oldal_felirata": "szabványos otthoni mérőhely",
+   "survey_sorszam": 20
+  },
+  {
+   "file": "mockup/img/szerelo.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "kozepes",
+   "atlag_fenyero": 0.47,
+   "oldal_felirata": "Mérőhely szabványosítás",
+   "survey_sorszam": 22
+  },
+  {
+   "file": "mockup/img/tablet.jpg",
+   "w": 900,
+   "h": 550,
+   "bg": "kozepes",
+   "atlag_fenyero": 0.44,
+   "oldal_felirata": "Mérőhely beépítése",
+   "survey_sorszam": 23
+  },
+  {
+   "file": "mockup/img/tarsashaz.jpg",
+   "w": 1000,
+   "h": 1000,
+   "bg": "sotet",
+   "atlag_fenyero": 0.33,
+   "oldal_felirata": "Kezdőlap elektromos fovezetek felujitas",
+   "survey_sorszam": 7
+  }
+ ],
+ "logos": [
+  {
+   "file": "logo-light.png",
+   "w": 1413,
+   "h": 272
+  },
+  {
+   "file": "logo.png",
+   "w": 1413,
+   "h": 272
+  }
+ ]
+}

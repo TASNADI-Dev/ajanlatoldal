@@ -1,0 +1,106 @@
+{
+ "company": "HEDGEHAIR Professzionális Fodrászat",
+ "short_name": "Hedge Hair",
+ "domain": "hedgehair.com",
+ "category": "fodrászat",
+ "customer_word": "vendég",
+ "city": "Debrecen",
+ "phone": {
+  "value": "+36 70 935 3427 (City Center), +36 30 154 7070 (University)",
+  "source": "https://hedgehair.com/kapcsolat/"
+ },
+ "email": {
+  "value": "info@hedgehair.com",
+  "source": "https://hedgehair.com/kapcsolat/"
+ },
+ "hours": {
+  "value": "szalononként eltér",
+  "source": "https://hedgehair.com/debrecen/"
+ },
+ "primary_action": {
+  "type": "online időpontfoglalás (bwnet.hu)",
+  "label": "Időpontfoglalás",
+  "source": "https://hedgehair.com/debrecen/"
+ },
+ "salons": [
+  {
+   "city": "Budapest",
+   "addr": "Nádor utca 8.",
+   "source": "https://hedgehair.com/budapest/"
+  },
+  {
+   "city": "Debrecen",
+   "addr": "Piac utca 38. és Bólyai 2.",
+   "source": "https://hedgehair.com/debrecen/"
+  },
+  {
+   "city": "Nyíregyháza",
+   "addr": "Dózsa György utca 5.",
+   "source": "https://hedgehair.com/nyiregyhaza-2/"
+  }
+ ],
+ "services": [
+  {
+   "text": "Nőknek, férfiaknak, hajfestés, alkalmi, ápolás, styling kategóriák",
+   "source": "https://hedgehair.com/arlista/"
+  },
+  {
+   "text": "Hedge Academy oktatás",
+   "source": "https://hedgehair.com/oktatas/"
+  }
+ ],
+ "specifics": [
+  {
+   "text": "Ismert emberek divatos fizurái és esküvői hajkoronák a galériában",
+   "source": "https://hedgehair.com/"
+  },
+  {
+   "text": "Dancing with the stars, F1 after party a blogon",
+   "source": "https://hedgehair.com/"
+  }
+ ],
+ "prices": [
+  {
+   "text": "van árlista, a mock-upba nem kerül",
+   "source": "https://hedgehair.com/arlista/"
+  }
+ ],
+ "interactive": [
+  {
+   "text": "online időpontfoglalás külső linken (bwnet.hu)",
+   "source": "https://hedgehair.com/debrecen/"
+  }
+ ],
+ "colors": {
+  "primary": "#fdb467",
+  "accent": [
+   "#f78da7",
+   "#82c0c7"
+  ],
+  "source": "CSS színek; logó fehér"
+ },
+ "logo": "mockup/img/logo.png",
+ "photos": [
+  {
+   "file": "hero.jpg",
+   "what": "hátulról fotózott menyasszony, hullámos félig feltűzött haj virágokkal",
+   "viewed": true
+  },
+  {
+   "file": "w1-w5",
+   "what": "esküvői hajkoronák, menyasszonyok",
+   "viewed": true
+  },
+  {
+   "file": "f1-f4",
+   "what": "divatfotók stylingos hajjal (galéria)",
+   "viewed": true
+  }
+ ],
+ "observations": [
+  "a nyitóoldal három képe blogposzt-előkép (DWTS plakát, F1, könyv), nincs szalon- vagy hajfotó",
+  "a telefonszám (+36-30/154-7070) nem kattintható (nincs tel: link)",
+  "a szalonoldalon három külön időpontfoglalás-link van, a főoldalról nincs közvetlen",
+  "divi alapszínek (#2ea3f2) a sablonból, a logó fehér keretes, saját színpaletta nem látszik"
+ ]
+}

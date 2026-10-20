@@ -1,0 +1,106 @@
+{
+ "photos": [
+  {
+   "file": "mockup/img/f1.jpg",
+   "w": 800,
+   "h": 1000,
+   "bg": "feher",
+   "atlag_fenyero": 0.7,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/f2.jpg",
+   "w": 800,
+   "h": 1000,
+   "bg": "kozepes",
+   "atlag_fenyero": 0.58,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/f3.jpg",
+   "w": 800,
+   "h": 1000,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.57,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/f4.jpg",
+   "w": 800,
+   "h": 1000,
+   "bg": "kozepes",
+   "atlag_fenyero": 0.36,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/hero.jpg",
+   "w": 980,
+   "h": 653,
+   "bg": "kozepes",
+   "atlag_fenyero": 0.31,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/w1.jpg",
+   "w": 682,
+   "h": 1024,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.71,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/w2.jpg",
+   "w": 682,
+   "h": 1024,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.64,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/w3.jpg",
+   "w": 682,
+   "h": 1024,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.56,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/w4.jpg",
+   "w": 682,
+   "h": 1024,
+   "bg": "sotet",
+   "atlag_fenyero": 0.16,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  },
+  {
+   "file": "mockup/img/w5.jpg",
+   "w": 682,
+   "h": 1024,
+   "bg": "vilagos",
+   "atlag_fenyero": 0.86,
+   "oldal_felirata": "",
+   "survey_sorszam": null
+  }
+ ],
+ "logos": [
+  {
+   "file": "logo-light.png",
+   "w": 486,
+   "h": 150
+  },
+  {
+   "file": "logo.png",
+   "w": 486,
+   "h": 150
+  }
+ ]
+}

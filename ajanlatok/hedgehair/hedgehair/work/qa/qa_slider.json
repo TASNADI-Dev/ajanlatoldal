@@ -1,0 +1,95 @@
+{
+ "mod": "auto",
+ "pasztazott_pozicio": 75,
+ "jeloltek": [
+  {
+   "y": 1920,
+   "state": {
+    "W": 1280,
+    "H": 800,
+    "mid": 0,
+    "midId": null,
+    "block": {
+     "id": "b0",
+     "type": "hero_mask"
+    },
+    "title": {
+     "ok": true,
+     "text": "Szalon, divat és esküvői hajkoronák.",
+     "right": 0.5,
+     "box": [
+      38,
+      224,
+      1242,
+      503
+     ]
+    },
+    "logo": {
+     "ok": true,
+     "w": 130,
+     "nat": 486
+    },
+    "btn": {
+     "ok": true,
+     "navOnly": false,
+     "right": 0
+    },
+    "photo": {
+     "a": 0.8,
+     "right": 0.5,
+     "kind": "fotó"
+    },
+    "pageHasPhotos": true
+   },
+   "ures": 0.21,
+   "hard": [],
+   "soft": [
+    "a fő gomb a bal félen van"
+   ],
+   "ok": true
+  },
+  {
+   "y": 0,
+   "state": {
+    "W": 1280,
+    "H": 800,
+    "mid": 0,
+    "midId": "b0",
+    "block": {
+     "id": "b0",
+     "type": "hero_mask"
+    },
+    "title": {
+     "ok": false,
+     "text": null,
+     "right": 0
+    },
+    "logo": {
+     "ok": true,
+     "w": 130,
+     "nat": 486
+    },
+    "btn": {
+     "ok": false,
+     "navOnly": true,
+     "right": 0
+    },
+    "photo": {
+     "a": 1,
+     "right": 0.5,
+     "kind": "fotó"
+    },
+    "pageHasPhotos": true
+   },
+   "ures": 0.68,
+   "hard": [
+    "nincs teljesen látható főcím"
+   ],
+   "soft": [
+    "fő gomb csak a menüsorban látszik"
+   ],
+   "ok": false
+  }
+ ],
+ "ajanlott_y": 1920
+}

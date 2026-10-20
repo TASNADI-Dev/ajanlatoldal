@@ -1,0 +1,208 @@
+{
+ "company": "HÓDIVILL",
+ "title": "HÓDIVILL · Villanyszerelés Budapest",
+ "theme": {
+  "mode": "dark",
+  "bg": "#031c4a",
+  "surface": "#082a63",
+  "ink": "#f2f7ff",
+  "muted": "#9db4d8",
+  "a1": "#1da1f3",
+  "a2": "#e8232b",
+  "a3": "#f2c230",
+  "grain": false
+ },
+ "type": {
+  "weight": 800,
+  "stretch": "85%",
+  "stretch2": "100%",
+  "upper": true
+ },
+ "logo": {
+  "nav": "img/logo-light.png",
+  "mark": "img/logo-light.png",
+  "pre": "img/logo.png"
+ },
+ "topbar": {
+  "phone": "+36 30 747 2060",
+  "address": "1097 Budapest, Pápay István utca 7."
+ },
+ "cta": {
+  "label": "Hívás most",
+  "href": "tel:+36307472060"
+ },
+ "preloader": {
+  "label": "Villanyszerelés · Budapest"
+ },
+ "blocks": [
+  {
+   "type": "hero_mask",
+   "word": "HÓDIVILL",
+   "photo": "img/tablet.jpg",
+   "alt": "Villanyszerelő az elosztószekrénynél",
+   "particles": "none",
+   "intro": {
+    "tl": "Regisztrált villanyszerelő",
+    "tr": "Hódi Norbert ev.",
+    "bl": "Budapest egész területén",
+    "br": "Új és meglévő hálózat"
+   },
+   "title_small": "Villanyszerelés",
+   "title": "Budapest egész területén.",
+   "buttons": [
+    {
+     "label": "Hívás most · +36 30 747 2060",
+     "href": "tel:+36307472060"
+    },
+    {
+     "label": "Szolgáltatások",
+     "href": "#b2",
+     "ghost": true
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "text": "Újépítésű lakás, ház vagy [img:img/szerelo.jpg] meglévő hálózat: minőségi, *garanciával* [img:img/muszer.jpg] végzett kivitelezés, hogy a hálózat *üzembiztos* legyen."
+  },
+  {
+   "type": "hpanels",
+   "panels": [
+    {
+     "bg": "bg",
+     "title_small": "amiben segítünk",
+     "title": "Szolgáltatások",
+     "text": "Négy terület, egy telefonszám."
+    },
+    {
+     "bg": "glow",
+     "kicker": "Regisztrált villanyszerelő",
+     "visual": {
+      "kind": "words",
+      "items": [
+       "Regisztrált",
+       "Mérőhely",
+       "H tarifa"
+      ]
+     },
+     "text": "Mérőhely, szabványosítás, villanyszerelés és H tarifa."
+    },
+    {
+     "bg": "a2",
+     "title_small": "október 15 – április 15",
+     "title": "H tarifa",
+     "text": "Kedvezményes áram a fűtési idényben, külön mérőórával.",
+     "visual": {
+      "kind": "ring",
+      "ring_text": "H TARIFA · FŰTÉSI IDÉNY · KÜLÖN MÉRŐÓRA · HŐSZIVATTYÚ · KLÍMA ·",
+      "center": "H",
+      "outer": "#1da1f3",
+      "inner": "#082a63"
+     }
+    },
+    {
+     "bg": "surface",
+     "title_small": "a munka tervezéssel kezdődik",
+     "title": "Villanyszerelő",
+     "text": "Keresztmetszet, áramkörök, kismegszakítók: méretezés, utána kivitelezés.",
+     "visual": {
+      "kind": "list",
+      "items": [
+       "Vezetékek keresztmetszete",
+       "Áramkörök száma",
+       "Kismegszakítók",
+       "Túlfeszültség-védelem"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "title": "Mérőhely, *szekrény,* óra",
+   "label": "Mérőhely szabványosítás",
+   "cards": [
+    {
+     "img": "img/szekreny.jpg",
+     "title": "Szabványos mérőhely",
+     "text": "Biztonságosan kezeli a megnövekedett terhelést."
+    },
+    {
+     "img": "img/muszer.jpg",
+     "title": "Felmérés és tanácsadás",
+     "text": "Először megmérjük, mire van szükség."
+    },
+    {
+     "img": "img/meroora.jpg",
+     "title": "H tarifa",
+     "text": "Fűtésre alkalmas klíma vagy hőszivattyú mellé."
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "label": "Mérőhely szabványosítás",
+   "title": "Három *lépés.*",
+   "items": [
+    {
+     "title": "Igénybejelentés",
+     "text": "Az áramszolgáltatónál, a többletteljesítményre."
+    },
+    {
+     "title": "Vizsgálat",
+     "text": "Hálózat, csatlakozó vezeték, mérőhely, mértáramú vezetékek."
+    },
+    {
+     "title": "MGT",
+     "text": "Műszaki gazdasági tájékoztató a további teendőkről."
+    }
+   ]
+  },
+  {
+   "type": "chips",
+   "label": "Kinek dolgozunk",
+   "title": "Lakásnak, háznak, cégnek.",
+   "highlight": "100%-ban üzembiztos hálózat.",
+   "chips": [
+    "Újépítésű lakás",
+    "Családi ház",
+    "Hálózat korszerűsítése",
+    "Társasház felújítás",
+    "Karbantartás",
+    "Üzemzavar-javítás",
+    "Intézmények",
+    "Cégek"
+   ],
+   "buttons": [
+    {
+     "label": "Hívjon: +36 30 747 2060",
+     "href": "tel:+36307472060"
+    }
+   ]
+  },
+  {
+   "type": "footer",
+   "call_small": "Villamos hálózat felújítás vagy bővítés? Hívjon:",
+   "call": "+36 30 747 2060",
+   "href": "tel:+36307472060",
+   "particles": "none",
+   "info": [
+    {
+     "label": "Cím",
+     "value": "1097 Budapest\nPápay István utca 7."
+    },
+    {
+     "label": "E-mail",
+     "value": "kapcsolat@hodivill.hu"
+    },
+    {
+     "label": "Vállalkozás",
+     "value": "Hódi Norbert ev."
+    }
+   ],
+   "huge": "HÓDIVILL",
+   "company": "HÓDIVILL",
+   "legal_left": "Hódi Norbert ev. · Regisztrált villanyszerelő"
+  }
+ ]
+}

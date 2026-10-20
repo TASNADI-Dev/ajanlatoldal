@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Skintim gyantaszalonok</title>
+<style>
+@font-face {
+  font-family: 'Disp';
+  font-style: normal;
+  font-display: block;
+  font-weight: 600;
+  src: url(fonts/cormorant-garamond-latin-ext-600-normal.woff2) format('woff2'), url(fonts/cormorant-garamond-latin-ext-600-normal.woff) format('woff');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Disp';
+  font-style: normal;
+  font-display: block;
+  font-weight: 600;
+  src: url(fonts/cormorant-garamond-latin-600-normal.woff2) format('woff2'), url(fonts/cormorant-garamond-latin-600-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Disp';
+  font-style: italic;
+  font-display: block;
+  font-weight: 600;
+  src: url(fonts/cormorant-garamond-latin-ext-600-italic.woff2) format('woff2'), url(fonts/cormorant-garamond-latin-ext-600-italic.woff) format('woff');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Disp';
+  font-style: italic;
+  font-display: block;
+  font-weight: 600;
+  src: url(fonts/cormorant-garamond-latin-600-italic.woff2) format('woff2'), url(fonts/cormorant-garamond-latin-600-italic.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Acc';
+  font-style: italic;
+  font-display: block;
+  font-weight: 400;
+  src: url(fonts/cormorant-garamond-latin-ext-400-italic.woff2) format('woff2'), url(fonts/cormorant-garamond-latin-ext-400-italic.woff) format('woff');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Acc';
+  font-style: italic;
+  font-display: block;
+  font-weight: 400;
+  src: url(fonts/cormorant-garamond-latin-400-italic.woff2) format('woff2'), url(fonts/cormorant-garamond-latin-400-italic.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'Body';
+  font-style: normal;
+  font-display: block;
+  font-weight: 200 800;
+  src: url(fonts/manrope-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Body';
+  font-style: normal;
+  font-display: block;
+  font-weight: 200 800;
+  src: url(fonts/manrope-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root{--bg:#fff7fb;--surface:#ffe6f1;--ink:#2f230c;--muted:#7a6a68;--a1:#e72489;--a2:#c4177a;--a3:#2f230c;--on-a1:#2f230c;--on-a2:#2f230c;--tb-bg:#2f230c;--disp:'Disp',Impact,'Arial Narrow',sans-serif;--acc:'Acc',Georgia,serif;--body:'Body',system-ui,sans-serif;--dw:600;--ds:100%;--ds2:100%;--dt:none;--gut:clamp(16px,3vw,40px);--gut-l:clamp(16px,5vw,80px);--tb-h:0px;color-scheme:light}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+::selection{background:var(--a1);color:var(--on-a1)}
+.disp{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds);text-transform:var(--dt);line-height:.94;letter-spacing:-.01em}
+.it{font-family:var(--acc);font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-stretch:100%}
+.lbl{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.grain{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
+.pre{position:fixed;inset:0;z-index:100;display:grid;place-items:center}
+.pre .half{position:absolute;left:0;right:0;height:50.5%;background:var(--a1)}.pre .t{top:0}.pre .b{bottom:0}
+.pre .core{position:relative;z-index:2;text-align:center;color:var(--on-a1)}
+.pre .logo{width:min(84vw,620px);height:auto;margin:0 auto 18px}
+.pre .count{font-family:var(--acc);font-style:italic;font-size:clamp(48px,7vw,96px);line-height:1;color:var(--a2);font-variant-numeric:tabular-nums}
+.pre .lbl{color:inherit;opacity:.7;margin-top:10px}
+.topbar{position:fixed;inset:0 0 auto 0;z-index:51;height:34px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 var(--gut);background:var(--tb-bg);color:var(--a1);font-size:13px;letter-spacing:.02em;border-bottom:2px solid var(--a1);white-space:nowrap}
+.topbar a,.topbar span{display:inline-flex;align-items:center;gap:7px}.tb-l{display:flex;gap:26px}
+.topbar svg{width:14px;height:14px;fill:var(--a1)}.tb-k{font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+nav{position:fixed;inset:var(--tb-h) 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px var(--gut);transition:background .4s}
+nav.solid{background:linear-gradient(var(--bg) 0%,color-mix(in srgb,var(--bg) 82%,transparent) 100%);backdrop-filter:blur(10px)}
+.brand img{height:40px;width:auto}.brand .bm{display:none}.brand .txt{font-size:30px}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:99px;background:var(--a1);color:var(--on-a1);font-weight:800;font-size:15px;letter-spacing:.02em;overflow:hidden}
+.btn span{position:relative;z-index:1}
+.btn:before{content:"";position:absolute;inset:0;background:var(--a2);transform:translateY(101%);transition:transform .45s cubic-bezier(.7,0,.2,1);border-radius:inherit}
+.btn:hover:before{transform:none}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--ink) 35%,transparent)}.btn.ghost:before{background:var(--ink)}.btn.ghost:hover{color:var(--bg)}
+nav .btn{padding:11px 20px;font-size:14px}
+@media(max-width:860px){.topbar .tb-addr,.topbar .tb-k{display:none}.topbar{gap:8px;font-size:12px;padding:0 12px;letter-spacing:0}.brand .bl{display:none}.brand .bm{display:block;height:44px}}
+@media (prefers-reduced-motion:reduce){.grain{animation:none}}
+
+
+.hero{position:relative;height:100vh;height:100svh;overflow:hidden}
+.hero .photo{position:absolute;inset:0}
+.hero .photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.25)}
+.hero .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,color-mix(in srgb,var(--bg) 93%,transparent) 100%)}
+.hero svg.mask{position:absolute;inset:0;width:100%;height:100%;z-index:2}
+.hero .mtext{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds);letter-spacing:-.01em;text-transform:var(--dt)}
+.hero .intro{position:absolute;inset:0;z-index:3;pointer-events:none;display:flex;flex-direction:column;justify-content:space-between;padding:150px var(--gut) 34px}
+.hero .intro .top,.hero .intro .bot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.hero .intro .it{font-size:clamp(22px,2.6vw,36px)}
+.hero .after{position:absolute;inset:auto 0 0 0;z-index:4;padding:0 var(--gut) clamp(40px,7vh,80px);opacity:0}
+.hero .after h1{font-size:clamp(56px,10vw,180px)}
+.hero .after h1 .it{color:var(--a1);font-size:.62em;display:block;margin-bottom:.12em}
+canvas.fx{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none}
+@media(max-width:860px){.hero .intro .bot .hide-m{display:none}}
+
+.state{padding:clamp(110px,18vh,200px) var(--gut-l)}
+.state p{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);font-size:clamp(34px,5.6vw,92px);line-height:1;text-transform:var(--dt);max-width:15em}
+.state .w{opacity:.14;display:inline-block}
+.state .chip{display:inline-block;width:1.7em;height:.82em;border-radius:99px;overflow:hidden;vertical-align:-.04em;margin:0 .08em}
+.state .chip img{width:100%;height:100%;object-fit:cover}
+.state .it{color:var(--a1);text-transform:none}
+
+.hwrap{position:relative;overflow:hidden}
+.htrack{display:flex;width:max-content;height:100vh;height:100svh}
+.panel{width:100vw;height:100%;flex:none;position:relative;display:grid;align-items:center;padding:100px var(--gut-l) 60px;overflow:hidden}
+.panel .num{position:absolute;top:96px;right:var(--gut-l);font-family:var(--acc);font-style:italic;font-size:22px;color:var(--muted)}
+.panel.bg-bg{background:var(--bg)}.panel.bg-surface{background:var(--surface)}
+.panel.bg-a1{background:var(--a1);color:var(--on-a1)}.panel.bg-a2{background:var(--a2);color:var(--on-a2)}
+.panel.bg-glow{background:radial-gradient(ellipse at 70% 60%,color-mix(in srgb,var(--a2) 35%,var(--surface)) 0%,var(--surface) 60%)}
+.panel h2{font-size:clamp(90px,17vw,300px)}
+.panel h3{font-size:clamp(64px,9.5vw,165px)}
+.panel h2 .it,.panel h3 .it{display:block;font-size:.32em;color:var(--a1);margin-bottom:.15em}
+.panel.bg-a1 h3 .it,.panel.bg-a1 h2 .it{color:var(--a2)}
+.panel p{max-width:24em;margin-top:24px;font-size:18px;opacity:.82}
+.panel .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6vw;align-items:center}
+.panel>div,.panel .grid>div{min-width:0}.panel{grid-template-columns:minmax(0,1fr)}
+.panel h2,.panel h3{overflow-wrap:normal}
+.v-words{font-size:clamp(66px,11vw,200px)}
+.v-words div:nth-child(2){color:var(--a2)}.v-words div:nth-child(3){color:var(--a1)}
+.v-photo{border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-height:72vh;justify-self:center;width:min(100%,520px)}
+.v-photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.2)}
+.v-ring{width:min(44vw,70vh);aspect-ratio:1;justify-self:center}.v-ring svg{width:100%;height:100%;overflow:visible}
+.v-cols{display:flex;gap:clamp(12px,2vw,30px);align-items:flex-end;justify-content:center}
+.v-cols .col{width:clamp(64px,8vw,120px);text-align:center}
+.v-cols .g{position:relative;height:clamp(200px,40vh,380px);border:2px solid color-mix(in srgb,currentColor 35%,transparent);border-top:none;border-radius:4px 4px 22px 22px;overflow:hidden;clip-path:polygon(0 0,100% 0,88% 100%,12% 100%)}
+.v-cols .liq{position:absolute;left:0;right:0;bottom:0;height:0%;background:var(--c)}
+.v-cols .liq:before{content:"";position:absolute;left:0;right:0;top:-24px;height:26px;background:var(--f);border-radius:10px 10px 0 0}
+.v-cols b{display:block;margin-top:14px;font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);text-transform:var(--dt);font-size:clamp(15px,1.4vw,20px);line-height:1.05}
+.v-cols small{opacity:.7;font-family:var(--acc);font-style:italic;font-size:16px}
+.v-list{list-style:none;font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);text-transform:var(--dt);font-size:clamp(30px,3.6vw,58px);line-height:1.08}
+.v-list li{border-bottom:1px solid color-mix(in srgb,currentColor 22%,transparent);padding:.18em 0}
+@media(max-width:860px){.hwrap .htrack{flex-direction:column;width:100%;height:auto}.panel{width:100%;min-height:100svh;height:auto}.panel .grid{grid-template-columns:1fr}.v-ring{width:min(86vw,420px)}.v-cols .g{height:200px}}
+
+.feat{padding:clamp(100px,15vh,170px) var(--gut-l)}
+.feat h2{font-size:clamp(52px,8vw,140px);max-width:10em;margin-top:16px}.feat h2 .it{color:var(--a1)}
+.feat .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px}
+.feat .it-card{background:var(--surface);border-radius:24px;padding:30px 28px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.feat .n{font-family:var(--acc);font-style:italic;color:var(--a1);font-size:24px}
+.feat h3{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds2);text-transform:var(--dt);font-size:clamp(26px,2.3vw,36px);line-height:1;margin-top:40px}
+.feat p{color:var(--muted);margin-top:10px}
+@media(max-width:860px){.feat .grid{grid-template-columns:1fr}}
+
+.gal{padding:clamp(100px,15vh,170px) 0;overflow:hidden}
+.gal header{padding:0 var(--gut-l) 50px}.gal h2{font-size:clamp(52px,9vw,160px)}.gal h2 .it{color:var(--a1)}
+.gal .row{display:flex;gap:22px;width:max-content;padding-left:var(--gut-l)}
+.gal figure{width:clamp(260px,32vw,520px);flex:none}
+.gal .im{aspect-ratio:4/5;border-radius:22px;overflow:hidden}.gal .im img{width:100%;height:120%;object-fit:cover}
+.gal figcaption{margin-top:12px;color:var(--muted)}
+
+.chipsb{padding:clamp(110px,18vh,200px) var(--gut-l);position:relative;overflow:hidden}
+.chipsb h2{font-size:clamp(56px,10vw,175px);max-width:9.5em;margin-top:20px}
+.chipsb mark{color:var(--a1);padding:0 .06em;background:linear-gradient(var(--a1),var(--a1)) no-repeat 0 60%/0% 88%;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.chipsb .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;max-width:900px}
+.chipsb .chips span{padding:12px 20px;border-radius:99px;border:1px solid color-mix(in srgb,var(--ink) 22%,transparent);font-size:16px}
+.chipsb .row{margin-top:40px}
+
+.foot{position:relative;padding:clamp(100px,16vh,180px) var(--gut-l) 40px;overflow:hidden}
+.foot .call{font-size:clamp(52px,8.6vw,155px)}.foot .call a{color:var(--a1)}
+.foot .call .it{display:block;font-size:.4em;margin-bottom:.2em}
+.foot .info{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin:70px 0 0;padding-top:28px;border-top:1px solid color-mix(in srgb,var(--ink) 14%,transparent)}
+.foot .info b{display:block;font-size:20px;margin-top:6px;font-weight:600}
+.huge{font-family:var(--disp);font-weight:var(--dw);font-stretch:var(--ds);text-transform:var(--dt);line-height:.78;text-align:center;width:max-content;max-width:none;margin-inline:auto;color:transparent;-webkit-text-stroke:1.5px color-mix(in srgb,var(--ink) 20%,transparent);margin-top:60px;user-select:none;letter-spacing:-.02em;white-space:nowrap}
+.band{background:var(--a1);border-radius:22px;padding:clamp(18px,3vw,34px);margin-top:30px;display:grid;place-items:center}.band img{width:min(100%,620px);height:auto}
+.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:20px}
+@media(max-width:860px){.foot .info{grid-template-columns:1fr}}
+
+</style></head><body>
+
+<div class="pre" aria-hidden="true"><div class="half t"></div><div class="half b"></div><div class="core"><img class="logo" src="img/logo.png" alt=""><div class="count">0</div><div class="lbl">Bejelentkezés nélküli gyantaszalon</div></div></div>
+
+<nav><a class="brand" href="#b0"><img class="bl" src="img/logo.png" alt="Skintim"><img class="bm" src="img/logo.png" alt="Skintim"></a><a class="btn" href="#b5"><span>Keress szalont</span></a></nav>
+<section class="hero blk" id="b0" data-type="hero_mask">
+  <div class="photo"><img src="img/wax.jpg" alt="Skintim kozmetikus cukorgyantával"></div>
+  <svg class="mask" aria-hidden="true"><defs><mask id="b0m" maskUnits="userSpaceOnUse" x="-20000" y="-20000" width="40000" height="40000">
+    <rect x="-20000" y="-20000" width="40000" height="40000" fill="#fff"/><text class="mtext" text-anchor="middle" fill="#000">SKINTIM</text></mask></defs>
+    <rect class="mrect" x="-20000" y="-20000" width="40000" height="40000" fill="var(--bg)" mask="url(#b0m)"/></svg>
+  
+  <div class="intro"><div class="top"><span class="it">Gyantaszalon</span><span class="it">Bejelentkezés nélkül</span></div>
+    <div class="bot"><span class="lbl">Országszerte 20 helyen</span><span class="lbl hide-m">Budapesten 12, vidéken 8</span></div></div>
+  <div class="after"><h1 class="disp"><span class="it">Gyere akár azonnal,</span><span class="it">bejelentkezés</span> nélkül.</h1><div class="row"><a class="btn mag" href="#b5"><span>Keress szalont</span></a><a class="btn ghost mag" href="#b2"><span>Szolgáltatások</span></a></div></div>
+</section>
+<section class="state blk" id="b1" data-type="statement"><p>Gyere akár azonnal, <span class="chip"><img src="img/honey.jpg" alt=""></span> időpont nélkül. Cukorgyantával és hagyományos gyantával, <span class="chip"><img src="img/brow.jpg" alt=""></span> szemöldök- és szempillafestéssel, és lehet, hogy rögtön <span class="it">te jössz.</span></p></section>
+<section class="hwrap blk" id="b2" data-type="hpanels"><div class="htrack"><div class="panel bg-bg" data-kind="photo"><span class="num">01 / 04</span><div class="grid"><div><span class="lbl"></span><h3 class="disp"><span class="it">teljes testszőrtelenítés</span>Gyantázás</h3><p>Az egyedülálló Skintim cukorpasztával és hagyományos gyantával, időpontfoglalás nélkül.</p></div><div class="v-photo"><img src="img/wax.jpg" alt=""></div></div></div><div class="panel bg-glow" data-kind="words"><span class="num">02 / 04</span><div><span class="lbl">Festés</span><div class="v-words disp"><div>Szemöldök</div><div>Szempilla</div></div><p>Tartós, többféle színben. A pillák egész hossza látszik.</p></div></div><div class="panel bg-a1" data-kind="photo"><span class="num">03 / 04</span><div class="grid"><div><span class="lbl"></span><h3 class="disp"><span class="it">arcfrissítő kezelés</span>SkintiMaszk</h3><p>30 perces expressz Hydrojelly® maszkos kezelés, 2–3 hetente érdemes megismételni.</p></div><div class="v-photo"><img src="img/hero-hd.jpg" alt=""></div></div></div><div class="panel bg-surface" data-kind="list"><span class="num">04 / 04</span><div class="grid"><div><span class="lbl"></span><h3 class="disp"><span class="it">lézeres kezelések</span>Carbon Peeling</h3><p>Pórus összehúzás, gyulladáscsökkentés és pigmentkezelés. Dióda lézeres szőrtelenítés a Hattyúházban.</p></div><ul class="v-list"><li>Carbon Peeling</li><li>Dióda lézer</li><li>Hattyúház</li></ul></div></div></div></section>
+<section class="feat blk" id="b3" data-type="features"><span class="lbl">Miért a Skintim?</span><h2 class="disp">A legnagyobb <span class="it">gyantaszalon</span>hálózat.</h2><div class="grid"><div class="it-card"><span class="n">01</span><div><h3>Saját márkás termékek</h3><p>Skintim cukorgyanta, hagyományos gyanta, bőrradír és testápoló.</p></div></div><div class="it-card"><span class="n">02</span><div><h3>Szakképzett kozmetikusok</h3><p>Gyors, pontos, alapos és kíméletes kezelések.</p></div></div><div class="it-card"><span class="n">03</span><div><h3>Higiénia és biztonság</h3><p>Maximális higiénia minden kezelésnél.</p></div></div><div class="it-card"><span class="n">04</span><div><h3>Minőségbiztosítás</h3><p>Folyamatos ellenőrzések és ügyfélvisszajelzések.</p></div></div></div></section>
+<section class="gal blk" id="b4" data-type="gallery"><header><span class="lbl">Szalonok</span><h2 class="disp" style="margin-top:16px">Otthonos, mégis <span class="it">professzionális.</span></h2></header><div class="row"><figure><div class="im"><img src="img/salon3.jpg" alt="Kezelő"></div><figcaption>Kezelő</figcaption></figure><figure><div class="im"><img src="img/lounge.jpg" alt="Váró"></div><figcaption>Váró</figcaption></figure><figure><div class="im"><img src="img/salon2.jpg" alt="Kezelő"></div><figcaption>Kezelő</figcaption></figure><figure><div class="im"><img src="img/salon1.jpg" alt="Recepció"></div><figcaption>Recepció</figcaption></figure></div></section>
+<section class="chipsb blk" id="b5" data-type="chips"><span class="lbl">Szalonkereső</span>
+  <h2 class="disp">Országszerte 20 helyen. <mark>Budapesten 12, vidéken 8.</mark></h2><div class="chips"><span>Bazilika</span><span>Hattyúház</span><span>Óbuda</span><span>Újbuda</span><span>Római</span><span>Boráros</span><span>Csepel</span><span>Tizenhárom</span><span>Nyugati</span><span>Zugló</span><span>Elite</span><span>Újpest</span><span>Budaörs</span><span>Érd</span><span>Fehérvár</span><span>Győr</span><span>Debrecen</span><span>Pécs</span><span>Veszprém</span><span>Szeged</span></div></section>
+<footer class="foot blk" id="b6" data-type="footer"><canvas class="fx"></canvas>
+<div class="call disp"><span class="it">Skintim Bazilika, hívj minket:</span><a href="tel:+36203785874">+36 20 378 5874</a></div>
+<div class="info"><div><span class="lbl">Bazilika</span><b>1065 Budapest, Révay köz 2.</b></div><div><span class="lbl">Hattyúház</span><b>1015 Budapest, Hattyú u. 14.</b></div><div><span class="lbl">Gyere</span><b>Időpont nélkül</b></div></div><div class="huge" aria-hidden="true">SKINTIM</div><div class="band"><img src="img/logo.png" alt="Skintim"></div>
+<div class="legal"><span>Skintim bejelentkezés nélküli gyantaszalonok</span><span>Látványterv · a TASNADI javaslata</span></div></footer>
+<script src="js/gsap.min.js"></script><script src="js/ScrollTrigger.min.js"></script><script src="js/lenis.min.js"></script>
+<script>
+(function(){
+
+const REC=/rec/.test(location.search),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,SCRUB=REC?true:1;
+gsap.registerPlugin(ScrollTrigger);const mm=gsap.matchMedia();let lenis=null;
+if(!REC&&!reduce&&window.Lenis){lenis=new Lenis({lerp:.09});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0)}
+function particles(c,kind){if(!c||reduce)return;const x=c.getContext('2d');let w,h,ps=[];const col=getComputedStyle(document.documentElement).getPropertyValue('--a1').trim()||'#ffb050';
+ const tmp=document.createElement('canvas').getContext('2d');tmp.fillStyle=col;const hex=tmp.fillStyle;const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+ function rs(){const q=c.getBoundingClientRect();w=c.width=q.width*devicePixelRatio;h=c.height=q.height*devicePixelRatio}rs();addEventListener('resize',rs);
+ const up=kind!=='snow',n=innerWidth<700?40:85;
+ function sp(i){return{x:Math.random()*w,y:i?Math.random()*h:(up?h+20:-20),v:(.4+Math.random()*1.3)*devicePixelRatio,s:(.6+Math.random()*2.2)*devicePixelRatio,o:Math.random()*7,l:.5+Math.random()*.5}}
+ for(let i=0;i<n;i++)ps.push(sp(true));let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(c);
+ (function f(){requestAnimationFrame(f);if(!vis)return;x.clearRect(0,0,w,h);x.globalCompositeOperation='lighter';
+  for(const p of ps){p.y+=up?-p.v:p.v;p.o+=.03;p.x+=Math.sin(p.o)*.6*devicePixelRatio;if(p.y<-20||p.y>h+20)Object.assign(p,sp(false));
+   const a=p.l*(.55+.45*Math.sin(p.o*3)),gr=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.s*4);gr.addColorStop(0,`rgba(${r},${g},${b},${a})`);gr.addColorStop(1,`rgba(${r},${g},${b},0)`);
+   x.fillStyle=gr;x.beginPath();x.arc(p.x,p.y,p.s*4,0,7);x.fill()}})()}
+
+{const R=document.getElementById('b0');try{{const root=R,svg=root.querySelector('svg'),mt=root.querySelector('.mtext');let ox=0,oy=0;
+function lay(){const W=innerWidth,H=innerHeight;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);mt.setAttribute('font-size',100);mt.setAttribute('x',W/2);
+ let w=100;try{w=mt.getComputedTextLength()}catch(_){};const fs=Math.min(100*W*.86/Math.max(w,1),H*.62);mt.setAttribute('font-size',fs);mt.setAttribute('y',H/2+fs*.36);
+ try{const n=mt.getNumberOfChars(),e=mt.getExtentOfChar(Math.floor(n/2));ox=e.x+e.width/2}catch(_){ox=W/2};oy=H/2}
+lay();document.fonts&&document.fonts.ready.then(()=>{lay();ScrollTrigger.refresh()});addEventListener('resize',lay);
+const tl=gsap.timeline({scrollTrigger:{trigger:root,start:'top top',end:'+=220%',scrub:SCRUB,pin:true,anticipatePin:1}});
+tl.to(root.querySelector('.intro'),{opacity:0,duration:.12},0).to(mt,{scale:()=>innerWidth<700?55:70,svgOrigin:()=>ox+' '+oy,ease:'power3.in',duration:.7},0)
+ .to(root.querySelector('.photo img'),{scale:1,duration:.8,ease:'none'},0).to(root.querySelector('.mrect'),{opacity:0,duration:.12},.6)
+ .to(root.querySelector('.after'),{opacity:1,duration:.2},.72).from(root.querySelector('.after h1'),{y:80,duration:.28,ease:'power3.out'},.72);
+if(!REC&&!reduce){gsap.from(mt,{attr:{'letter-spacing':120},opacity:0,duration:1.6,ease:'expo.out',delay:.4});gsap.from(root.querySelector('.photo img'),{scale:1.6,duration:2.2,ease:'expo.out',delay:.3})}
+}}catch(err){console.error('blokk b0 (hero_mask):',err)}}
+{const R=document.getElementById('b1');try{{const p=R.querySelector('p');[...p.childNodes].forEach(n=>{if(n.nodeType===3){const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(t=>{if(!t||/^\s+$/.test(t))f.appendChild(document.createTextNode(t));else{const s=document.createElement('span');s.className='w';s.textContent=t;f.appendChild(s)}});n.replaceWith(f)}else if(n.classList)n.classList.add('w')});
+gsap.to(p.querySelectorAll('.w'),{opacity:1,stagger:.08,ease:'none',scrollTrigger:{trigger:R,start:'top 75%',end:'bottom 70%',scrub:true}});
+gsap.from(p.querySelectorAll('.chip'),{scale:0,rotate:-20,stagger:.2,scrollTrigger:{trigger:R,start:'top 70%',end:'center center',scrub:true}});}}catch(err){console.error('blokk b1 (statement):',err)}}
+{const R=document.getElementById('b2');try{{const root=R,ht=root.querySelector('.htrack');
+/* hosszú cím: csak akkor kicsinyít, ha a cím a panelből kilógna vagy levágódna (a rövid címek mérete változatlan) */
+function fit(){root.querySelectorAll('.panel h2,.panel h3').forEach(h=>{h.style.fontSize='';let fs=parseFloat(getComputedStyle(h).fontSize),p=h.closest('.panel'),n=0;
+ while(n++<40&&fs>26&&(h.scrollWidth>h.clientWidth+1||(innerWidth>860&&p.scrollHeight>p.clientHeight+1))){fs*=.93;h.style.fontSize=fs+'px'}})}
+fit();document.fonts&&document.fonts.ready.then(()=>{fit();ScrollTrigger.refresh()});ScrollTrigger.addEventListener('refreshInit',fit);
+function anim(p,ca){const o=ca?{containerAnimation:ca,start:'left 80%',end:'left 5%'}:{start:'top 80%',end:'center center'};const st=x=>Object.assign({trigger:p,scrub:true},o,x||{});const k=p.dataset.kind;
+ if(k==='words')gsap.fromTo(p.querySelectorAll('.v-words div'),{fontStretch:'125%',opacity:.2},{fontStretch:'62%',opacity:1,stagger:.15,scrollTrigger:st()});
+ if(k==='photo')gsap.fromTo(p.querySelector('.v-photo'),{clipPath:'inset(100% 0 0 0 round 24px)'},{clipPath:'inset(0% 0 0 0 round 24px)',scrollTrigger:st()}),gsap.to(p.querySelector('.v-photo img'),{scale:1,scrollTrigger:st()});
+ if(k==='ring'){gsap.fromTo(p.querySelector('.dim'),{scaleX:0,transformOrigin:'50% 50%'},{scaleX:1,scrollTrigger:st()});gsap.from(p.querySelector('.v-ring svg'),{rotate:-120,scale:.6,scrollTrigger:st(ca?{start:'left right',end:'left 10%'}:{})});gsap.to(p.querySelector('.spin'),{rotate:360,svgOrigin:'0 0',duration:40,repeat:-1,ease:'none'})}
+ if(k==='columns')p.querySelectorAll('.liq').forEach((l,i)=>gsap.to(l,{height:l.dataset.fill+'%',ease:'power1.out',scrollTrigger:st({start:(ca?'left ':'top ')+(80-i*4)+'%'})}));
+ if(k==='list')gsap.from(p.querySelectorAll('.v-list li'),{x:80,opacity:0,stagger:.1,scrollTrigger:st()});}
+mm.add('(min-width: 861px)',()=>{const tw=gsap.to(ht,{x:()=>-(ht.scrollWidth-innerWidth),ease:'none',scrollTrigger:{trigger:root,start:'top top',end:()=>'+='+(ht.scrollWidth-innerWidth)*1.15,pin:true,scrub:SCRUB,invalidateOnRefresh:true,anticipatePin:1}});
+ gsap.from(root.querySelector('.panel h2,.panel h3'),{xPercent:20,opacity:.2,scrollTrigger:{trigger:root,start:'top bottom',end:'top top',scrub:true}});
+ root.querySelectorAll('.panel').forEach(p=>anim(p,tw))});
+mm.add('(max-width: 860px)',()=>{root.querySelectorAll('.panel').forEach(p=>anim(p,null))});}}catch(err){console.error('blokk b2 (hpanels):',err)}}
+{const R=document.getElementById('b3');try{{gsap.from(R.querySelectorAll('.it-card'),{y:90,opacity:0,rotate:i=>i%2?2:-2,stagger:.12,scrollTrigger:{trigger:R.querySelector('.grid'),start:'top 90%',end:'top 40%',scrub:true}});}}catch(err){console.error('blokk b3 (features):',err)}}
+{const R=document.getElementById('b4');try{{const row=R.querySelector('.row');gsap.to(row,{x:()=>-Math.max(0,row.scrollWidth-innerWidth*.9),ease:'none',scrollTrigger:{trigger:R,start:'top 80%',end:'bottom 20%',scrub:true,invalidateOnRefresh:true}});
+R.querySelectorAll('.im img').forEach(i=>gsap.fromTo(i,{yPercent:-12},{yPercent:0,ease:'none',scrollTrigger:{trigger:R,start:'top bottom',end:'bottom top',scrub:true}}));}}catch(err){console.error('blokk b4 (gallery):',err)}}
+{const R=document.getElementById('b5');try{{const hl=R.querySelector('mark');gsap.timeline({scrollTrigger:{trigger:hl,start:'top 85%',end:'top 45%',scrub:true}}).to(hl,{backgroundSize:'100% 88%',ease:'none',duration:1}).to(hl,{color:'var(--on-a1)',duration:.25},.55);
+gsap.from(R.querySelectorAll('.chips span'),{y:60,opacity:0,rotate:i=>((i*37)%24)-12,stagger:.06,scrollTrigger:{trigger:R.querySelector('.chips'),start:'top 90%',end:'top 55%',scrub:true}});}}catch(err){console.error('blokk b5 (chips):',err)}}
+{const R=document.getElementById('b6');try{{gsap.from(R.querySelector('.call'),{yPercent:30,opacity:0,scrollTrigger:{trigger:R,start:'top 85%',end:'top 40%',scrub:true}});
+const hg=R.querySelector('.huge');if(hg){const fit=()=>{hg.style.fontSize='100px';const P=hg.parentElement,cs=getComputedStyle(P),W=P.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);hg.style.fontSize=(100*W/hg.scrollWidth*.98)+'px'};fit();document.fonts&&document.fonts.ready.then(()=>{fit();ScrollTrigger.refresh()});addEventListener('resize',fit);
+ gsap.fromTo(hg,{scaleX:1.25,opacity:.2,transformOrigin:'50% 100%'},{scaleX:1,opacity:1,scrollTrigger:{trigger:hg,start:'top bottom',end:'top 55%',scrub:true}})}
+particles(R.querySelector('canvas.fx'),"none");}}catch(err){console.error('blokk b6 (footer):',err)}}
+
+const pre=document.querySelector('.pre');if(pre){if(REC||reduce)pre.remove();else{const cnt=pre.querySelector('.count'),o={v:0};
+ gsap.to(o,{v:100,duration:1.5,ease:'power2.inOut',onUpdate:()=>cnt.textContent=Math.round(o.v),onComplete:()=>{gsap.to(pre.querySelector('.core'),{opacity:0,y:-20,duration:.4});
+  gsap.to(pre.querySelector('.t'),{yPercent:-100,duration:1.1,ease:'expo.inOut',delay:.25});gsap.to(pre.querySelector('.b'),{yPercent:100,duration:1.1,ease:'expo.inOut',delay:.25,onComplete:()=>pre.remove()})}})}}
+const nav=document.querySelector('nav'),first=document.querySelector('.blk');
+ScrollTrigger.create({start:()=>Math.max(80,(first?first.offsetHeight:600)*.9),end:'max',onToggle:s=>nav.classList.toggle('solid',s.isActive)});
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',ev=>{const t=document.querySelector(a.getAttribute('href'));if(!t)return;ev.preventDefault();lenis?lenis.scrollTo(t):t.scrollIntoView({behavior:'smooth'})}));
+document.fonts&&document.fonts.ready.then(()=>ScrollTrigger.refresh());addEventListener('resize',()=>ScrollTrigger.refresh());
+window.__ready=true;
+
+})();
+</script></body></html>

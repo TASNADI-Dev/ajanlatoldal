@@ -1,0 +1,15 @@
+{
+ "desktop": {
+  "view": "desktop",
+  "scroll_height": 8486,
+  "frames": 1599,
+  "seconds": 26.6,
+  "page_errors": [],
+  "video": "media/desktop.mp4",
+  "ugrasok_mp": [
+   3.82
+  ],
+  "ugrasok_szama": 1,
+  "szinkron": "blokkonként a desktophoz igazítva (9 pont)"
+ }
+}

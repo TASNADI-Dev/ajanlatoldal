@@ -1,0 +1,16 @@
+{
+ "mobile": {
+  "view": "mobile",
+  "scroll_height": 8266,
+  "frames": 1599,
+  "seconds": 26.6,
+  "page_errors": [],
+  "video": "media/mobile.mp4",
+  "ugrasok_mp": [
+   14.35,
+   16.08
+  ],
+  "ugrasok_szama": 2,
+  "szinkron": "blokkonként a desktophoz igazítva (9 pont)"
+ }
+}

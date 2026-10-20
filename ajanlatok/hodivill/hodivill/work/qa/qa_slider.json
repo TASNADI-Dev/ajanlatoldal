@@ -1,0 +1,99 @@
+{
+ "mod": "auto",
+ "pasztazott_pozicio": 112,
+ "jeloltek": [
+  {
+   "y": 1920,
+   "state": {
+    "W": 1280,
+    "H": 800,
+    "mid": 0,
+    "midId": null,
+    "block": {
+     "id": "b0",
+     "type": "hero_mask"
+    },
+    "title": {
+     "ok": true,
+     "text": "Villanyszerelés BUDAPEST EGÉSZ TERÜLETÉN",
+     "right": 0.5,
+     "box": [
+      38,
+      178,
+      1242,
+      503
+     ]
+    },
+    "logo": {
+     "ok": true,
+     "w": 208,
+     "nat": 1413
+    },
+    "btn": {
+     "ok": true,
+     "navOnly": false,
+     "right": 0
+    },
+    "photo": {
+     "a": 0.8,
+     "right": 0.5,
+     "kind": "fotó"
+    },
+    "pageHasPhotos": true
+   },
+   "ures": 0.24,
+   "hard": [],
+   "soft": [
+    "a fő gomb a bal félen van"
+   ],
+   "ok": true
+  },
+  {
+   "y": 11040,
+   "state": {
+    "W": 1280,
+    "H": 800,
+    "mid": 0.014,
+    "midId": "b4",
+    "block": {
+     "id": "b4",
+     "type": "steps"
+    },
+    "title": {
+     "ok": true,
+     "text": "HÁROM lépés.",
+     "right": 0.44,
+     "box": [
+      64,
+      509,
+      1088,
+      605
+     ]
+    },
+    "logo": {
+     "ok": true,
+     "w": 208,
+     "nat": 1413
+    },
+    "btn": {
+     "ok": false,
+     "navOnly": true,
+     "right": 0
+    },
+    "photo": {
+     "a": 0.43,
+     "right": 0.5,
+     "kind": "fotó"
+    },
+    "pageHasPhotos": true
+   },
+   "ures": 0.38,
+   "hard": [],
+   "soft": [
+    "fő gomb csak a menüsorban látszik"
+   ],
+   "ok": true
+  }
+ ],
+ "ajanlott_y": 1920
+}
