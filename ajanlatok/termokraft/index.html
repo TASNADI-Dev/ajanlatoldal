@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>[hidden]{display:none!important}</style>
+<title>Termokraft Épületgépészet weboldal javaslat</title>
+<style>
+/* =========================================================================
+   TASNADI × HIDEG EMAIL 2.0 – AJÁNLATOLDAL SABLON
+   GENERÁLT blokkok: hero, videók, most/lehetne, 3 személyes sor (lásd <!-- GEN --> jelölések)
+   FIX blokkok: folyamat+idővonal, árak (B variáns), referenciák + ügyfél-visszajelzések, kik vagyunk (kapcsolattartó fotóval, iroda címe), űrlap, lábléc (cégnév, cím, tasnadi.co-ra linkelt logó)
+   ========================================================================= */
+@font-face{font-family:'Museo Sans';font-weight:300;font-style:normal;font-display:swap;src:url(assets/fonts/museosans-300.woff2) format('woff2')}
+@font-face{font-family:'Museo Sans';font-weight:500;font-style:normal;font-display:swap;src:url(assets/fonts/museosans-500.woff2) format('woff2')}
+@font-face{font-family:'Museo Sans';font-weight:700;font-style:normal;font-display:swap;src:url(assets/fonts/museosans-700.woff2) format('woff2')}
+@font-face{font-family:'Museo Sans';font-weight:900;font-style:normal;font-display:swap;src:url(assets/fonts/museosans-900.woff2) format('woff2')}
+@font-face{font-family:'Museo Sans';font-weight:700;font-style:italic;font-display:swap;src:url(assets/fonts/museosans-700italic.woff2) format('woff2')}
+@font-face{font-family:'Museo Sans';font-weight:900;font-style:italic;font-display:swap;src:url(assets/fonts/museosans-900italic.woff2) format('woff2')}
+
+/* Layout: fehér, levegős TASNADI-keret; a cégre szabott mozgókép a főszereplő. */
+:root{--bg:#ffffff;--soft:#f4f5f7;--ink:#0d0e10;--mut:#5c626b;--line:#e3e5e9;--orange:#f39200;--blue:#00a4e0;--sky:#e3f5fc;--font:'Museo Sans',system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-weight:300;line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+b,strong{font-weight:700}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#ffffffe6;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.top img{height:28px;width:auto}
+.logo{display:inline-flex;align-items:center;border-radius:4px}
+.logo:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 40px;border-radius:4px;font-weight:400;font-size:18px;background:var(--orange);color:#111;border:2px solid var(--orange);font-family:inherit;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.btn{box-shadow:0 10px 40px #f3920073}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 44px #f39200a0}
+.btn:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.top .btn{padding:9px 22px;font-size:15px;box-shadow:none}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--sky);color:#00739e;font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--blue)}
+h1,h2{font-weight:500;letter-spacing:-.045em;text-wrap:balance;line-height:.98}
+h3{font-weight:700;letter-spacing:-.01em;line-height:1.15}
+h2{font-size:clamp(32px,4.6vw,54px)}
+h2 em,h1 em{font-style:normal;color:var(--orange)}
+.sub{color:var(--mut);font-size:clamp(17px,1.6vw,19px);max-width:36em}
+section{padding-block:clamp(70px,10vw,120px)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px 40px;flex-wrap:wrap;margin-bottom:48px}
+.head h2{margin-top:18px}
+
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
+    @keyframes rv{from{opacity:.3;transform:translateY(50px)}to{opacity:1;transform:none}}
+  }
+}
+
+/* hero (GEN) */
+.hero{padding-block:clamp(48px,7vw,84px) 0;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(26px,8.2vw,100px);margin:22px 0 0}
+.hero h1 span{display:block;white-space:nowrap}
+.hero .lead{margin:24px 0 32px}
+.stage{position:relative;margin-top:clamp(50px,7vw,80px);padding-bottom:clamp(40px,6vw,70px)}
+.stage:before{content:"";position:absolute;left:-30vw;right:-30vw;top:22%;bottom:0;background:var(--ink);z-index:-1}
+.desk{border-radius:16px;overflow:hidden;background:#0e0a07;box-shadow:0 40px 90px -30px #0008;border:1px solid #ffffff22;width:min(100%,960px)}
+.desk .bar{height:34px;background:#1d1f23;display:flex;gap:7px;align-items:center;padding:0 14px}
+.desk .bar i{width:10px;height:10px;border-radius:50%;background:#3a3d43}
+.desk .bar span{margin-left:14px;flex:1;max-width:340px;height:20px;border-radius:6px;background:#2a2d32;color:#9aa0a8;font-size:11px;display:flex;align-items:center;padding-left:10px}
+.desk video{width:100%;aspect-ratio:16/9;object-fit:cover}
+.phone{position:absolute;right:0;bottom:clamp(20px,4vw,40px);width:clamp(150px,21vw,250px);border-radius:36px;border:9px solid #111214;overflow:hidden;background:#0e0a07;box-shadow:0 40px 80px -24px #000a}
+.phone video{width:100%;aspect-ratio:390/844;object-fit:cover}
+.stage .cap{color:#a5abb3;font-size:13px;margin-top:16px}
+
+/* most / lehetne (GEN) */
+.cmpwrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.cmp{position:relative;aspect-ratio:16/10;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 70px -30px #0005;user-select:none;touch-action:pan-y;background:#000}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.cmp .after{clip-path:inset(0 0 0 50%)}
+.cmp .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:#fff;pointer-events:none;box-shadow:0 0 12px #0005}
+.cmp .handle:after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font-weight:700;font-size:16px;letter-spacing:1px;box-shadow:0 6px 18px #0004}
+.cmp input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.lab{position:absolute;top:14px;z-index:2;padding:6px 13px;border-radius:999px;font-weight:900;font-size:12px;letter-spacing:.08em;text-transform:uppercase;pointer-events:none}
+.lab.l{left:14px;background:#fff;color:#111}.lab.r{right:14px;background:var(--orange);color:#111}
+.wins{display:grid;gap:14px;margin-top:28px}
+.wins div{display:flex;gap:12px;align-items:baseline;font-weight:500}
+.wins b{color:var(--orange);font-weight:900}
+
+/* folyamat + idővonal (FIX) */
+.soft{background:var(--soft)}
+.tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.tl:before{content:"";position:absolute;left:28px;right:28px;top:27px;height:3px;background:linear-gradient(90deg,var(--orange),var(--blue));border-radius:3px}
+.tl .st{position:relative;min-width:0}
+.tl .dot{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#fff;border:3px solid var(--orange);font-weight:900;font-size:15px;position:relative;z-index:1}
+.tl .st:nth-child(2) .dot{border-color:#7a9bb7}
+.tl .st:nth-child(3) .dot{border-color:var(--blue);background:var(--blue);color:#fff}
+.tl .st:nth-child(4) .dot{border-color:var(--blue)}
+.tl .when{display:block;margin-top:22px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.tl h3{font-size:24px;margin-top:6px}
+.tl p{color:var(--mut);margin-top:8px;max-width:22em}
+.note{margin-top:34px;color:var(--mut);font-size:14px}
+
+/* árak (FIX, B variáns) */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pc{border:1px solid var(--line);border-radius:22px;padding:30px 26px;background:#fff;position:relative;min-width:0}
+.pc.hot{border:2px solid var(--orange);box-shadow:0 30px 60px -34px #f3920088}
+.pc .tag{position:absolute;top:-13px;left:24px;background:var(--orange);color:#111;font-weight:700;font-size:12px;padding:4px 12px;border-radius:999px}
+.pc .sz{font-size:44px;font-weight:900;line-height:1}
+.pc .what{color:var(--mut);margin-top:8px;min-height:3.2em}
+.pc .pr{font-size:28px;font-weight:900;margin-top:18px;font-variant-numeric:tabular-nums}
+.pc .pr small{font-size:14px;font-weight:500;color:var(--mut)}
+.pc ul{list-style:none;margin-top:16px;display:grid;gap:6px;color:var(--mut);font-size:15px}
+.pc li:before{content:"✓ ";color:var(--blue);font-weight:900}
+
+/* referenciák (FIX) */
+.refs{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.ref{grid-column:span 2;border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line);transition:transform .35s,box-shadow .35s;min-width:0}
+.ref:nth-child(4),.ref:nth-child(5){grid-column:span 3}
+.ref:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px #0005}
+.ref .im{aspect-ratio:16/10;overflow:hidden;background:var(--soft)}
+.ref img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s}
+.ref:hover img{transform:scale(1.05)}
+.ref .tx{padding:18px 20px 20px}
+.ref h3{font-size:20px;letter-spacing:-.01em}
+.ref p{color:var(--mut);font-size:15px;margin-top:2px}
+.ref span{display:inline-block;margin-top:10px;color:#00739e;font-weight:700;font-size:14px}
+/* ügyfél-visszajelzések (FIX) – ellenőrzött Clutch-értékelések, magyar fordításban */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+.qt{background:var(--soft);border-radius:20px;padding:28px 26px 24px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.qt .st5{color:var(--orange);letter-spacing:3px;font-size:15px}
+.qt blockquote{font-size:clamp(18px,1.7vw,21px);font-weight:500;line-height:1.4;letter-spacing:-.01em;flex:1}
+.qt figcaption{font-size:14px;color:var(--mut)}
+.qt figcaption b{display:block;color:var(--ink)}
+.rating{display:flex;justify-content:space-between;align-items:center;gap:10px 24px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--mut)}
+.rating a{font-weight:700;color:#00739e}
+.rating a:hover{color:var(--orange)}
+
+/* kik vagyunk – űrhajós (FIX) */
+.space{position:relative;overflow:hidden;background:radial-gradient(ellipse 60% 70% at 72% 55%,#12324a 0%,#0b1420 45%,#07090d 100%);color:#fff}
+.space .stars{position:absolute;inset:0;background-image:radial-gradient(1.4px 1.4px at 12% 18%,#fff9,transparent),radial-gradient(1px 1px at 28% 72%,#fff7,transparent),radial-gradient(1.6px 1.6px at 44% 30%,#fffa,transparent),radial-gradient(1px 1px at 58% 84%,#fff6,transparent),radial-gradient(1.2px 1.2px at 86% 12%,#fff9,transparent),radial-gradient(1px 1px at 92% 64%,#fff7,transparent),radial-gradient(1.3px 1.3px at 6% 52%,#fff8,transparent),radial-gradient(1px 1px at 36% 8%,#fff6,transparent),radial-gradient(1.2px 1.2px at 70% 40%,#fff5,transparent)}
+.chip.dark{background:#00a4e026;color:#7fd6f5}
+.who{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.who h2{color:#fff;font-size:clamp(40px,5.4vw,70px)}
+.who .big{font-size:clamp(20px,2.2vw,26px);font-weight:700;line-height:1.35;margin-top:22px;max-width:24em}
+.who .sub{color:#b8c3cf}
+.meta{display:grid;grid-template-columns:auto auto;justify-content:start;gap:28px 56px;margin-top:40px;padding-top:30px;border-top:1px solid #ffffff1c}
+.meta small{display:block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:12px}
+.meta b{display:block;color:#fff;font-size:18px;font-weight:700;line-height:1.3}
+.meta span{display:block;color:#b8c3cf;font-size:15px;line-height:1.55}
+.meta .nw{display:inline;white-space:nowrap}
+.pp{display:flex;gap:16px;align-items:center}
+.pp img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 2px #0b1420,0 0 0 3.5px #f39200aa}
+.astro{justify-self:center;width:min(100%,420px)}
+.astro img{width:100%;height:auto;animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-18px) rotate(1.5deg)}}
+
+/* kapcsolat + űrlap (FIX) */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.direct{display:grid;gap:12px;margin-top:30px}
+.direct div{display:grid;grid-template-columns:1fr auto;gap:2px 14px;align-items:center;padding:16px 20px;border:1px solid var(--line);border-radius:16px}
+.direct .k{grid-column:1/-1;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.direct a{font-weight:700;font-size:clamp(16px,4.2vw,20px);min-width:0;overflow-wrap:anywhere}
+.direct a:hover{color:var(--orange)}
+.direct button{padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font:inherit;font-size:13px;font-weight:500;cursor:pointer}
+form{background:var(--ink);color:#fff;border-radius:28px;padding:clamp(26px,4vw,44px);display:grid;gap:16px;position:relative;overflow:hidden}
+form:after{content:"";position:absolute;width:420px;height:420px;right:-160px;top:-180px;border-radius:50%;background:radial-gradient(circle,#f3920040,transparent 65%);pointer-events:none}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:6px;font-size:13px;font-weight:700;letter-spacing:.04em;color:#c4c9d0;position:relative;z-index:1;min-width:0}
+input,textarea{font:inherit;font-weight:300;font-size:16px;color:#fff;background:#ffffff10;border:1px solid #ffffff2a;border-radius:12px;padding:13px 14px;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+.ck{display:flex;gap:10px;align-items:flex-start;font-weight:300;letter-spacing:0;font-size:13px;color:#aab0b8}
+.ck input{width:18px;height:18px;margin-top:2px;flex:none;accent-color:var(--orange)}
+form .btn{width:100%;position:relative;z-index:1;font-size:18px;padding:17px}
+.fmsg{font-size:14px;color:#c4c9d0;position:relative;z-index:1}
+.fmsg b{color:#fff}
+footer{padding-block:40px;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:grid;grid-template-columns:auto 1fr;gap:10px 40px;align-items:start}
+footer img{height:22px}
+footer .co{line-height:1.55}
+footer .co b{color:var(--ink);font-weight:700}
+footer .fine{grid-column:1/-1;font-size:13px;padding-top:16px;margin-top:6px;border-top:1px solid var(--line)}
+footer a:hover{color:var(--orange)}
+
+@media(max-width:900px){
+  .cmpwrap,.who,.contact{grid-template-columns:1fr}
+  .tl,.prices{grid-template-columns:1fr}
+  .tl:before{left:27px;right:auto;top:28px;bottom:28px;width:3px;height:auto;background:linear-gradient(180deg,var(--orange),var(--blue))}
+  .tl .st{display:grid;grid-template-columns:56px 1fr;gap:0 18px}
+  .tl .st .when{margin-top:4px}
+  .tl .st>*:not(.dot){grid-column:2}
+  .tl .st .dot{grid-row:1/span 3}
+  .refs{grid-template-columns:1fr 1fr}
+  .quotes{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+  .ref,.ref:nth-child(4),.ref:nth-child(5){grid-column:span 1}
+  .ref:nth-child(5){grid-column:span 2}
+  .phone{right:-6px;width:34%}
+  .astro{width:min(80%,320px)}
+  .meta{grid-template-columns:1fr;gap:26px}
+}
+@media(max-width:560px){
+  .refs,.fr{grid-template-columns:1fr}
+  .ref:nth-child(5){grid-column:span 1}
+}
+@media (prefers-reduced-motion:reduce){.astro img{animation:none}}
+</style>
+</head>
+<body>
+
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="https://tasnadi.co" target="_blank" rel="noopener" aria-label="TASNADI – tasnadi.co"><img src="assets/logo-dark.svg" alt="TASNADI"></a>
+  <a class="btn" href="#kapcsolat">Érdekel</a>
+</div></header>
+
+<main>
+<!-- GEN: hero – cégnév, domain, egy személyes mondat, videók -->
+<section class="hero"><div class="wrap">
+  <span class="chip"><i></i>Személyes javaslat · Termokraft Épületgépészet, Szombathely</span>
+  <h1><span>Így nézhetne ki a</span><span><em>termokraft.hu!</em></span></h1>
+  <p class="sub lead">Újragondoltuk a weboldalatokat a saját logótokkal, színeitekkel és fotóitokkal. Érdekel, hogy mire jutottunk?</p>
+  <a class="btn" href="#kapcsolat">Érdekel</a>
+  <div class="stage">
+    <div class="desk"><div class="bar"><i></i><i></i><i></i><span>termokraft.hu</span></div>
+      <video id="vd" src="media/desktop.mp4" poster="media/poster-desktop.jpg" muted loop playsinline preload="auto"></video></div>
+    <div class="phone"><video id="vm" src="media/mobile.mp4" poster="media/poster-mobile.jpg" muted loop playsinline preload="auto"></video></div>
+    <p class="cap">Számítógépen és telefonon. Illusztráció: a tartalom a mostani oldalatokról való.</p>
+  </div>
+</div></section>
+
+<!-- GEN: most / lehetne – két képernyőkép + 3 sor arról, ami a tervben ténylegesen benne van -->
+<section><div class="wrap cmpwrap">
+  <div class="rv">
+    <span class="chip"><i></i>Most és lehetne</span>
+    <h2 style="margin-top:18px">Húzd el a csúszkát.</h2>
+    <p class="sub" style="margin-top:16px">Ugyanaz az épületgépészeti cég, ugyanaz a logó, ugyanazok a képek, új köntösben.</p>
+    <div class="wins">
+      <div><b>01</b>Ingyenes konzultáció egy hívásra</div>
+      <div><b>02</b>Víz, gáz, fűtés, hőszivattyú egy görgetésre</div>
+      <div><b>03</b>Telefonon is ugyanilyen látványos</div>
+    </div>
+  </div>
+  <div class="cmp rv" id="cmp">
+    <img src="media/now-desktop.jpg" alt="A mostani oldal">
+    <img class="after" id="after" src="media/new-desktop.jpg" alt="A javasolt új oldal">
+    <input type="range" id="rng" min="0" max="100" value="50" aria-label="Most és lehetne összehasonlítás">
+    <div class="handle" id="handle"></div>
+  </div>
+</div></section>
+<!-- /GEN -->
+
+<!-- FIX: folyamat + idővonal -->
+<section class="soft"><div class="wrap">
+  <div class="head rv">
+    <div><span class="chip"><i></i>Hogyan dolgozunk</span><h2>Egy hét, és él az oldal.</h2></div>
+    <p class="sub">A munka nagy részét mi végezzük. Nektek csak egy beszélgetés és néhány anyag kell.</p>
+  </div>
+  <div class="tl rv">
+    <div class="st"><div class="dot">1</div><span class="when">Első lépés</span><h3>Beszélgetünk</h3><p>Rákattintasz az „Érdekel” gombra, 2 munkanapon belül jelentkezünk.</p></div>
+    <div class="st"><div class="dot">2</div><span class="when">Anyagok</span><h3>Elküldöd, ami van</h3><p>Logó, képek és egy elérhetőség. Ha valami hiányzik, az sem gond.</p></div>
+    <div class="st"><div class="dot">3</div><span class="when">Hetedik nap</span><h3>Él az oldal</h3><p>Megtervezzük, megépítjük, teszteljük és élesítjük.</p></div>
+    <div class="st"><div class="dot">4</div><span class="when">Utána</span><h3>Üzemeltetjük</h3><p>A domaint, a tárhelyet és a karbantartást is ránk bízhatod, így nem kell technikai dolgokkal foglalkoznod.</p></div>
+  </div>
+  <p class="note">Expressz csomag esetén egy hét, attól számítva, hogy mindent megkaptunk.</p>
+</div></section>
+
+
+
+<!-- FIX: referenciák -->
+<section><div class="wrap">
+  <div class="head rv"><div><span class="chip"><i></i>Referenciák</span><h2>Néhány oldal, amit már elkészítettünk.</h2></div></div>
+  <div class="refs">
+    <a class="ref rv" href="https://tipuscsarnok.hu" target="_blank" rel="noopener"><div class="im"><img src="assets/refs/tipuscsarnok.jpg" alt="Típuscsarnok weboldal" loading="lazy"></div><div class="tx"><h3>Típuscsarnok</h3><p>Csarnoképítés, egyoldalas landing ajánlatkéréshez</p><span>tipuscsarnok.hu ↗</span></div></a>
+    <a class="ref rv" href="https://biembeauty.hu" target="_blank" rel="noopener"><div class="im"><img src="assets/refs/biem.jpg" alt="BI-EM Beauty weboldal" loading="lazy"></div><div class="tx"><h3>BI-EM Beauty</h3><p>Kozmetika, elegáns, foglalásra optimalizált oldal</p><span>biembeauty.hu ↗</span></div></a>
+    <a class="ref rv" href="https://luminosafilm.hu" target="_blank" rel="noopener"><div class="im"><img src="assets/refs/luminosa.jpg" alt="Luminosa Film weboldal" loading="lazy"></div><div class="tx"><h3>Luminosa Film</h3><p>Filmes produkciós cég, szolgáltatások és referenciák</p><span>luminosafilm.hu ↗</span></div></a>
+    <a class="ref rv" href="https://paprika-advertising.com" target="_blank" rel="noopener"><div class="im"><img src="assets/refs/paprika.jpg" alt="Paprika Advertising weboldal" loading="lazy"></div><div class="tx"><h3>Paprika Advertising</h3><p>POS reklámügynökség, termékek és ajánlatkérés</p><span>paprika-advertising.com ↗</span></div></a>
+    <a class="ref rv" href="https://enjoyrobotics.com" target="_blank" rel="noopener"><div class="im"><img src="assets/refs/enjoy.jpg" alt="Enjoy Robotics weboldal" loading="lazy"></div><div class="tx"><h3>Enjoy Robotics</h3><p>Humanoid robotika, megoldások és iparágak</p><span>enjoyrobotics.com ↗</span></div></a>
+  </div>
+  <!-- FIX: ügyfél-visszajelzések (ellenőrzött Clutch-értékelések, magyar fordítás) -->
+  <div class="quotes">
+    <figure class="qt rv"><span class="st5" aria-label="5 csillagból 5">★★★★★</span><blockquote>„Lenyűgözött minket minden munkatársuk precizitása, profizmusa és kedvessége.”</blockquote><figcaption><b>G&amp;G Instruments Kft.</b>értékesítőmérnök</figcaption></figure>
+    <figure class="qt rv"><span class="st5" aria-label="5 csillagból 5">★★★★★</span><blockquote>„Az a legfontosabb nekik, hogy az ügyfél azt kapja, amire valóban szüksége van.”</blockquote><figcaption><b>SRG Group Kft.</b>ügyvezető partner</figcaption></figure>
+    <figure class="qt rv"><span class="st5" aria-label="5 csillagból 5">★★★★★</span><blockquote>„A profizmusukat és a részletekre való odafigyelésüket emelnénk ki.”</blockquote><figcaption><b>BitMist</b>ügyvezető</figcaption></figure>
+  </div>
+  <div class="rating"><span><b style="color:var(--ink)">4,9 / 5</b> · 15 ellenőrzött ügyfélértékelés a Clutch-on. Az idézetek az angol nyelvű értékelések fordításai.</span><a href="https://clutch.co/profile/tasnadi#reviews" target="_blank" rel="noopener">Összes értékelés ↗</a></div>
+</div></section>
+
+<!-- FIX: kik vagyunk -->
+<section class="space" id="kik">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap who">
+    <div class="rv">
+      <span class="chip dark"><i></i>Kik vagyunk</span>
+      <h2 style="margin-top:20px">Digitális, <em>emberi módon.</em></h2>
+      <p class="big">A TASNADI budapesti digitális ügynökség kis- és középvállalkozások számára.</p>
+      <p class="sub" style="margin-top:16px">Hisszük, hogy a jó eredmény jó kapcsolatból születik: előbb meghallgatunk, mindent átláthatóvá teszünk, érthetően beszélünk, és teljes felelősséget vállalunk az eredményért.</p>
+      <div class="meta">
+        <div><small>Kapcsolattartótok</small>
+          <div class="pp"><img src="assets/balazs.jpg" alt="Márton Balázs" width="64" height="64"><div><b>Márton Balázs</b><span>Account &amp; Projects Lead</span></div></div>
+        </div>
+        <div><small>Irodánk</small>
+          <span><span class="nw">1054 Budapest,</span><br><span class="nw">Bajcsy-Zsilinszky út 58.</span><br><span class="nw">2. emelet 1.</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="astro" aria-hidden="true"><img src="assets/astronaut.png" alt=""></div>
+  </div>
+</section>
+
+<!-- FIX: kapcsolat + űrlap -->
+<section id="kapcsolat"><div class="wrap contact">
+  <div class="rv">
+    <span class="chip"><i></i>Kapcsolat</span>
+    <h2 style="margin-top:18px">Érdekel? <em>Beszéljünk.</em></h2>
+    <p class="sub" style="margin-top:16px">Töltsd ki az űrlapot, vagy írj, hívj közvetlenül. A kapcsolatfelvétel semmire nem kötelez.</p>
+    <div class="direct">
+      <div><span class="k">E-mail</span><a href="mailto:balazs@tasnadi.net?subject=Termokraft%20%C3%89p%C3%BCletg%C3%A9p%C3%A9szet%20weboldal%20%E2%80%93%20%C3%89rdekel">balazs@tasnadi.net</a><button type="button" class="cp" data-v="balazs@tasnadi.net">Másolás</button></div>
+      <div><span class="k">Telefon</span><a href="tel:+36303837865">+36 30 383 7865</a><button type="button" class="cp" data-v="+36303837865">Másolás</button></div>
+    </div>
+  </div>
+  <form id="form" class="rv" novalidate>
+    <div class="fr">
+      <label for="f-name">Név<input id="f-name" name="name" autocomplete="name" required></label>
+      <label for="f-phone">Telefon<input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
+    </div>
+    <label for="f-email">E-mail<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+    <label for="f-msg">Üzenet (nem kötelező)<textarea id="f-msg" name="message" placeholder="Pl. mikor kereshetünk?"></textarea></label>
+    <label class="ck" for="f-ok"><input id="f-ok" type="checkbox" required>Hozzájárulok személyes adataim kapcsolatfelvétel céljából történő kezeléséhez.</label>
+    <button class="btn" type="submit">Küldés</button>
+    <p class="fmsg" id="fmsg" hidden></p>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <a class="logo" href="https://tasnadi.co" target="_blank" rel="noopener" aria-label="TASNADI – tasnadi.co"><img src="assets/logo-dark.svg" alt="TASNADI"></a>
+  <p class="co"><b>TASNADI Group Kft.</b><br>1054 Budapest, Bajcsy-Zsilinszky út 58., 2. emelet 1.<br><a href="https://tasnadi.co" target="_blank" rel="noopener">tasnadi.co</a> · <a href="mailto:balazs@tasnadi.net">balazs@tasnadi.net</a> · <a href="tel:+36303837865">+36 30 383 7865</a></p>
+  <p class="fine">Előzetes látványterv a(z) Termokraft Épületgépészet számára. A videók illusztrációk. © 2018–2026 TASNADI Group Kft.</p>
+</div></footer>
+
+<script>
+(function(){
+  /* A két videó együtt indul és együtt fut (azonos hossz, a mobil a desktophoz igazodik). */
+  var vd=document.getElementById('vd'),vm=document.getElementById('vm');
+  if(vd&&vm){function go(){[vd,vm].forEach(function(v){var p=v.play();if(p&&p.catch)p.catch(function(){})})}
+    go();
+    [vd,vm].forEach(function(v){v.addEventListener('canplay',function(){if(v.paused)v.play().catch(function(){})})});
+    ['touchstart','pointerdown','scroll','click'].forEach(function(ev){window.addEventListener(ev,function(){if(vd.paused||vm.paused)go()},{passive:true})});
+    function sync(){if(Math.abs(vm.currentTime-vd.currentTime)>0.12)vm.currentTime=vd.currentTime}
+    vd.addEventListener('timeupdate',sync);vd.addEventListener('seeked',sync);
+    setInterval(function(){if(!vd.paused&&vm.paused)vm.play().catch(function(){});if(vd.paused&&!vm.paused&&vd.readyState>=3)vd.play().catch(function(){})},1000);
+    document.addEventListener('visibilitychange',function(){if(!document.hidden){vm.currentTime=vd.currentTime}});}
+
+  
+
+  var r=document.getElementById('rng'),a=document.getElementById('after'),h=document.getElementById('handle');
+  function u(){a.style.clipPath='inset(0 0 0 '+r.value+'%)';h.style.left=r.value+'%'}
+  r.addEventListener('input',u);u();
+  var cmp=document.getElementById('cmp'),done=false;
+  if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    new IntersectionObserver(function(e,o){if(e[0].isIntersecting&&!done){done=true;o.disconnect();var t0=null;
+      function f(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/2200);r.value=50+40*Math.sin(p*Math.PI*2)*(1-p);u();if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}},{threshold:.6}).observe(cmp);
+  }
+  document.querySelectorAll('.cp').forEach(function(b){b.addEventListener('click',function(){
+    var v=b.getAttribute('data-v');
+    function sel(){var el=b.previousElementSibling,rg=document.createRange();rg.selectNodeContents(el);var x=getSelection();x.removeAllRanges();x.addRange(rg);b.textContent='Kijelölve'}
+    try{navigator.clipboard.writeText(v).then(function(){b.textContent='Kimásolva'},sel)}catch(e){sel()}
+  })});
+
+  /* Űrlap: a beküldést a végleges hostingon a fejlesztők kötik be (pl. CRM / e-mail értesítés). */
+  var form=document.getElementById('form'),msg=document.getElementById('fmsg');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=form.elements.name.value.trim(),m=form.elements.email.value.trim(),ok=document.getElementById('f-ok').checked;
+    msg.hidden=false;
+    if(!n||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)){msg.innerHTML='Add meg a neved és egy érvényes e-mail címet.';return}
+    if(!ok){msg.innerHTML='Kérjük, fogadd el az adatkezelési hozzájárulást.';return}
+    msg.innerHTML='<b>Ez még előnézet:</b> az űrlap beküldése a végleges oldalon működik majd. Addig írj a balazs@tasnadi.net címre vagy hívj a +36 30 383 7865 számon.';
+  });
+})();
+</script>
+
+</body>
+</html>
